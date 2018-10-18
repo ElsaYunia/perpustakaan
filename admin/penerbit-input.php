@@ -5,11 +5,12 @@ if (empty($_SESSION['username'])){
 } else {
 	include "../conn.php";
 ?>
+<?php include "penerbit-id.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Administrator Website</title>
+     <title>Administrator Website</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- font Awesome -->
@@ -22,13 +23,15 @@ if (empty($_SESSION['username'])){
     <link href="css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
     <!-- Date Picker -->
     <link href="css/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <!-- fullCalendar -->
+    <!-- <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" /> -->
+    <!-- Daterange picker -->
     <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
     <!-- iCheck for checkboxes and radio inputs -->
     <link href="css/iCheck/all.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <!-- Theme style -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-
           <style type="text/css">
 
           </style>
@@ -92,12 +95,12 @@ $_SESSION['start_time'] = time();
                         <section class="sidebar">
                             <!-- Sidebar user panel -->
                             <div class="user-panel">
+
                                 <div class="info">
                                     <center><p><?php echo $_SESSION['username']; ?></p></center>
 
                                 </div>
                             </div>
-
                             <?php include "menu.php"; ?>
                         </section>
                         <!-- /.sidebar -->
@@ -112,77 +115,60 @@ $_SESSION['start_time'] = time();
                         <div class="col-xs-12">
                             <div class="panel">
                                 <header class="panel-heading">
-                                    <b>Data Kategori Anggota</b>
+                                    <b>Input Penerbit</b>
 
                                 </header>
                                 <!-- <div class="box-header"> -->
                                     <!-- <h3 class="box-title">Responsive Hover Table</h3> -->
 
                                 <!-- </div> -->
-                                <div class="panel-body table-responsive">
-                                    <div class="box-tools m-b-15">
-                                    <form action="kategori-anggota.php" method="POST">
-                                        <div class="input-group">
-                                        <input type='text' class="form-control input-sm pull-right" style="width: 150px;"  name='qcari' placeholder='Kategori Anggota ...' required />
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-sm btn-default" type="submit"><i class="fa fa-search"></i></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    </div>
-                                    <?php
-                    $query1="select * from tbl_kategori_anggota";
+                                <div class="panel-body">
+                      <form class="form-horizontal style-form" style="margin-top: 20px;" action="penerbit-insert.php" method="post" enctype="multipart/form-data" name="form1" id="form1" onsubmit="return validateForm();">
+                          <div class="form-group">
+                              <div class="col-sm-8">
+                                  <input name="id_penerbit" type="hidden" id="" class="form-control"  />
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Nama Penerbit</label>
+                              <div class="col-sm-8">
+                                  <input name="penerbit" type="text" id="" class="form-control"  required />
+                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label">Alamat</label>
+                              <div class="col-sm-8">
+                                  <input name="alamat" type="text" id="" class="form-control"  required />
+                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label"> Telepon</label>
+                              <div class="col-sm-8">
+                                  <input name="telepon" type="text" id="" class="form-control"  required />
+                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                              </div>
+                          </div>
 
-                    if(isset($_POST['qcari'])){
-	               $qcari=$_POST['qcari'];
-	               $query1="SELECT * FROM  tbl_kategori_anggota
-	               where kategori_anggota like '%$qcari%'";
-                    }
-                    $tampil=mysql_query($query1) or die(mysql_error());
-                    ?>
-                                    <table id="example" class="table table-hover table-bordered">
-                  <thead>
-                      <tr>
-                        <th><center>Kategori Anggota </center></th>
-                        <th><center>Maksimal Peminjaman Buku </center></th>
-                        <th><center>Maksimal Hari Peminjaman Buku </center></th>
-                        <th><center>Lama Perpanjangan </center></th>
-						<th><center>Action </center></th>
-                      </tr>
-                  </thead>
-                     <?php while($data=mysql_fetch_array($tampil))
-                    { ?>
-                    <tbody>
-                    <tr>
-                    <td><?php echo $data['kategori_anggota'];?></td>
-                    <td><?php echo $data['max_buku_pinjam'].' Eksemplar ';?></td>
-                    <td><?php echo $data['max_hari_pinjam'].' Hari';?></td>
-                    <td><?php echo $data['perpanjangan'].' Hari';?></td>
-                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit kategori Anggota" href="kategori-anggota-edit.php?hal=edit&kd=<?php echo $data['id_kategori_anggota'];?>">&nbsp;<i class="fa fa-edit"></i>&nbsp;Edit</a>
-                    <a onclick="return confirm ('Yakin hapus <?php echo $data['kategori_anggota'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus kategori Anggota" href="kategori-anggota-hapus.php?hal=hapus&kd=<?php echo $data['id_kategori_anggota'];?>"><i class="fa fa-edit"></i>&nbsp; Hapus</a></center></td></tr></div>
-                 <?php
-              }
-              ?>
-                   </tbody>
-                   </table>
-                  <!-- </div>-->
-                <div class="text-right" style="margin-top: 10px;">
-                 <a href="kategori-anggota.php" class="btn btn-sm btn-info">Refresh Data &nbsp;<i class="fa fa-refresh"></i></a> <a href="kategori-anggota-input.php" class="btn btn-sm btn-warning">Tambah Kategori Anggota &nbsp;<i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-                                </div><!-- /.box-body -->
+
+                          <div class="form-group" style="margin-bottom: 20px;">
+                              <label class="col-sm-2 col-sm-2 control-label"></label>
+                              <div class="col-sm-8">
+                                  <input type="submit" value="Simpan" class="btn btn-sm btn-primary" />&nbsp;
+	                              <a href="penerbit-input.php" class="btn btn-sm btn-danger">Batal </a>
+                              </div>
+                          </div>
+
+
+                          <div style="margin-top: 20px;"></div>
+                      </form>
+                                </div>
                             </div><!-- /.box -->
                         </div>
                     </div>
               <!-- row end -->
-                </section><!-- /.content -->
-				<br></br>
-				<br></br>
-				<br></br>
-				<br></br>
-				<br></br>
-				<br></br>
-				<br></br>
-				<br></br>
+                </section>
             </aside><!-- /.right-side -->
 
         </div><!-- ./wrapper -->
@@ -200,7 +186,6 @@ $_SESSION['start_time'] = time();
         <script src="js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
 
         <script src="js/plugins/chart.js" type="text/javascript"></script>
-
         <script src="js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
         <!-- calendar -->
         <script src="js/plugins/fullcalendar/fullcalendar.js" type="text/javascript"></script>
