@@ -10,36 +10,24 @@ if (empty($_SESSION['username'])){
 <html>
 <head>
     <meta charset="UTF-8">
-     <title>Administrator Website</title>
+    <title>Administrator Website</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- Ionicons -->
     <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
-    <!-- Morris chart -->
     <link href="css/morris/morris.css" rel="stylesheet" type="text/css" />
-    <!-- jvectormap -->
     <link href="css/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
-    <!-- Date Picker -->
     <link href="css/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
     <link href="css/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
-    <!-- iCheck for checkboxes and radio inputs -->
     <link href="css/iCheck/all.css" rel="stylesheet" type="text/css" />
-   
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <!-- Theme style -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
-          <style type="text/css">
-
-          </style>
-      </head>
-      <body class="skin-black">
+</head>
+    <body class="skin-black">
         <!-- header logo: style can be found in header.less -->
         <header class="header">
-             <a href="dashboard.php" class="logo">
+            <a href="dashboard.php" class="logo">
                 Administrator
             </a>
             <!-- Header Navbar: style can be found in header.less -->
@@ -53,27 +41,21 @@ if (empty($_SESSION['username'])){
                 </a>
                 <div class="navbar-right">
                     <ul class="nav navbar-nav">
-                        
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
-                            
                             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
                                 <li class="dropdown-header text-center">Account</li>
-
-                                   
-
-                                        <li class="divider"></li>
-
-                                        <li>
-                                            <a href="../logout.php"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
-                                        </li>
-                                    </ul>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="../logout.php"><i class="fa fa-ban fa-fw pull-right"></i> Logout</a>
                                 </li>
                             </ul>
-                        </div>
-                    </nav>
-                </header>
-                <?php
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<?php
 $timeout = 10; // Set timeout minutes
 $logout_redirect_url = "../login.html"; // Set logout URL
 
@@ -88,109 +70,135 @@ if (isset($_SESSION['start_time'])) {
 $_SESSION['start_time'] = time();
 ?>
 <?php } ?>
-                <div class="wrapper row-offcanvas row-offcanvas-left">
-                    <!-- Left side column. contains the logo and sidebar -->
-                    <aside class="left-side sidebar-offcanvas">
-                        <!-- sidebar: style can be found in sidebar.less -->
-                        <section class="sidebar">
-                            <?php include "menu.php"; ?>
-                        </section>
-                        <!-- /.sidebar -->
-                    </aside>
-
-                    <aside class="right-side">
-
-                <!-- Main content -->
-                <section class="content">
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="panel">
-                                <header class="panel-heading">
-                                    <b>Edit Buku</b>
-
-                                </header>
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="left-side sidebar-offcanvas">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <?php include "menu.php"; ?>
+            </section>
+        </aside>
+        <aside class="right-side">
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="panel">
+                            <header class="panel-heading">
+                                <b>Edit Buku</b>
+                            </header>
                     <?php
-                    $query = mysql_query("SELECT * FROM tbl_buku WHERE idBuku='$_GET[kd]'");
+                    $query = mysql_query(
+                        "SELECT b.* FROM tbl_buku  b
+                        LEFT JOIN tbl_penerbit a ON a.id_penerbit = b.Penerbit
+                        WHERE idBuku='$_GET[kd]'");
                     $data  = mysql_fetch_array($query);
                     ?>
                                 <!-- </div> -->
-                                <div class="panel-body">
-                      <form class="form-horizontal style-form" style="margin-top: 20px;" action="buku-update.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-                        <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Id Buku</label>
-                              <div class="col-sm-8">
-                                  <input name="id" type="text" id="id" class="form-control" value="<?php echo $data['idBuku']; ?>" readonly="readonly" required />
-                              </div>
-                          </div>
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Judul</label>
-                              <div class="col-sm-8">
-                                  <input name="judul" type="text" id="judul" class="form-control" value="<?php echo $data['Judul']; ?>"  required />
-                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
-                              </div>
-                          </div>
-						  <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Pengarang</label>
-                              <div class="col-sm-8">
-                                  <input name="pengarang" type="text" id="pengarang" class="form-control" value="<?php echo $data['Pengarang']; ?>" required />
-                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
-                              </div>
-                          </div>
-						  <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Penerbit</label>
-                              <div class="col-sm-8">
-                                  <input name="penerbit" type="text" id="penerbit" class="form-control" value="<?php echo $data['Penerbit']; ?>" required />
-                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
-                              </div>
-                          </div>
-						   <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Tahun Terbit</label>
-                              <div class="col-sm-8">
-                                  <input name="tahun" type="text" id="tahun" class="form-control" value="<?php echo $data['thnTerbit']; ?>" required />
-                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
-                              </div>
-                          </div>
-						  <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Jenis Buku</label>
-                                  <div class="col-sm-6">
-                                  <select class="form-control" name="jenis" id="jenis">
-                                  <option> <?php echo $data['idJenis']; ?></option>
-                                 <?php
-									$query = "SELECT * FROM tbl_jenis_buku ORDER by idJenis ASC";
-									$sql = mysql_query($query);
-									while ($buku=mysql_fetch_array($sql)) {
-									echo "<option value='$buku[0].$buku[1]'> $buku[0] - $buku[1]</option>";
-									}
-									
-								?>
-                                  </select>
-                              </div>
-                          </div>
-						  <?php
-                    $query = mysql_query("SELECT * FROM tbl_buku WHERE idBuku='$_GET[kd]'");
-                    $data  = mysql_fetch_array($query);
-                    ?>
-						  <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Stok</label>
-                              <div class="col-sm-8">
-                                  <input name="stok" type="text" id="stok" class="form-control" value="<?php echo $data['stok']; ?>" required />
-                                  <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
-                              </div>
-                          </div>
+                            <div class="panel-body">
+                                <form class="form-horizontal style-form" style="margin-top: 20px;" action="buku-update.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">Id Buku</label>
+                                        <div class="col-sm-8">
+                                            <input name="id" type="text" id="id" class="form-control" value="<?php echo $data['idBuku']; ?>" readonly="readonly" required />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">Judul</label>
+                                        <div class="col-sm-8">
+                                            <input name="judul" type="text" id="judul" class="form-control" value="<?php  echo $data['Judul']; ?>"  required />
+                                          <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">No. ISBN</label>
+                                        <div class="col-sm-8">
+                                            <input name="isbn" type="text" id="isbn" class="form-control" value="<?php  echo $data['isbn']; ?>"  required />
+                                          <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                                        </div>
+                                    </div>
+        						    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">Pengarang</label>
+                                        <div class="col-sm-8">
+                                            <input name="pengarang" type="text" id="pengarang" class="form-control" value="<?php echo $data['Pengarang']; ?>" required />
+                                          <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                                        </div>
+                                    </div>
+        						    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">Penerbit</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" name="id_penerbit" id="">
+                                                <option> -- Pilih Penerbit --</option>
+                                                <?php
+                                                    $query= "SELECT * FROM tbl_penerbit";
+                                                    $sql = mysql_query($query);
+                                                        while ($buku=mysql_fetch_array($sql)) {
+                                                            if($buku['id_penerbit']==$data['Penerbit']){
+                                                                echo "<option value=$buku[0] selected>$buku[1] </option>";
+                                                            }else{
+                                                                echo "<option value=$buku[0]>$buku[1] </option>";
+                                                            }
+                                                            
+                                                        }
+                                                ?>
+                                            </select>
+                                        </div>
+                                    </div>
+        						    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">Tahun Terbit</label>
+                                        <div class="col-sm-8">
+                                            <input name="tahun" type="text" id="tahun" class="form-control" value="<?php echo $data['thnTerbit']; ?>" required />
+                                          <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                                        </div>
+                                    </div>
+        						    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">Jenis Buku</label>
+                                        <div class="col-sm-8">
+                                            <select class="form-control" name="jenis" id="jenis">
+                                                <option> -- Pilih Jenis Buku --</option>
+                                                <?php
+                									$query = "SELECT * FROM tbl_jenis_buku ORDER by idJenis ASC";
+                									$sql = mysql_query($query);
+                									while ($buku=mysql_fetch_array($sql)) {
+                                                        if($buku['idJenis']==$data['idJenis']){
+                                                            echo "<option value='$buku[0]' selected> $buku[0] - $buku[1]</option>";
+                                                        }else{
+                                                            echo "<option value='$buku[0]'> $buku[0] - $buku[1]</option>";
+                                                        }
+                									}
+                									
+                								?>
+                                            </select>
+                                        </div>
+                                    </div>
+						    <?php
+                                $query = mysql_query("SELECT * FROM tbl_buku WHERE idBuku='$_GET[kd]'");
+                                $data  = mysql_fetch_array($query);
+                            ?>
+        						    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">Stok</label>
+                                        <div class="col-sm-8">
+                                              <input name="stok" type="text" id="stok" class="form-control" value="<?php echo $data['stok']; ?>" required />
+                                              <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                                        </div>
+                                  </div>
                          <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Tempat Buku</label>
-                                  <div class="col-sm-6">
+                                  <div class="col-sm-8">
                                   <select class="form-control" name="tempat" id="tempat">
-                                  <option>  <?php echo $data['idRak']; ?></option>
-                                 <?php
-									$query = "SELECT * FROM tbl_rak ORDER by idRak ASC";
-									$sql = mysql_query($query);
-									while ($rak=mysql_fetch_array($sql)) {
-									echo "<option value='$rak[0].$rak[1]'> $rak[0] - $rak[1]</option>";
-									}
-									
-								?>
+                                  <option> -- Pilih Lokasi Buku --</option>
+                                     <?php
+    									$query = "SELECT * FROM tbl_rak ORDER by idRak ASC";
+    									$sql = mysql_query($query);
+    									while ($rak=mysql_fetch_array($sql)) {
+                                            if($rak['idRak']==$data['idRak']){
+                                                echo "<option value='$rak[0]' selected> $rak[0] - $rak[1]</option>";
+                                            }else{
+                                                echo "<option value='$rak[0]'> $rak[0] - $rak[1]</option>";
+                                            }
+    									}
+    									
+    								?>
                                   </select>
                               </div>
                           </div>
@@ -200,7 +208,7 @@ $_SESSION['start_time'] = time();
                     ?>
 						  <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Tanggal Masuk</label>
-                              <div class="col-sm-6">
+                              <div class="col-sm-8">
                                   <input name="nama4" type="text" id="nama4" class="form-control" value="<?php echo $data['tglInput']; ?>" required />
                               </div>
                           </div>
@@ -208,8 +216,9 @@ $_SESSION['start_time'] = time();
                               <label class="col-sm-2 col-sm-2 control-label">Gambar Buku</label>
                               <div class="col-sm-8">
                                   <span class="help-block">Silahkan memilih foto untuk update atau mengedit data, tekan tombol batal untuk kembali.</span>
-                                  <img src="<?php echo $data['Foto']; ?>" height="250" width="250" alt="Foto Buku" style="margin-bottom: 10px;" /><br />
-                                  <input name="nama_file" id="nama_file" type="file"  required  />
+                                  <input type="hidden" name="foto_prev" value="<?php echo $data['Foto']; ?>"/> 
+                                  <img src="<?php echo $data['Foto']; ?>" height="430.31" width="262.5" alt="Foto Buku" style="margin-bottom: 10px;" /><br />
+                                  <input name="foto" id="foto" type="file"  />
                               </div>
                           </div>
                           <div class="form-group" style="margin-bottom: 20px;">

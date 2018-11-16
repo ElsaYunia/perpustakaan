@@ -81,7 +81,7 @@ tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " +
                         <li class="messages-menu">
                         <table width="1000">
             <tr>
-            <td width="200"><div class="Tanggal"><h4><script language="JavaScript">document.write(tanggallengkap);</script></div></h4></td> 
+            <td width="250"><div class="Tanggal"><h4><script language="JavaScript">document.write(tanggallengkap);</script></div></h4></td> 
             <td align="left" width="30"> - </td>
             <td align="left" width="620"> <h4><div id="output" class="jam" ></div></h4></td>
 			<td align="left" width="150"> <h4>Cari Buku disini  <i class="fa fa-right"></i> </h4></td>

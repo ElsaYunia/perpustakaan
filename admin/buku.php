@@ -128,7 +128,7 @@ $_SESSION['start_time'] = time();
                                     <div class="box-tools m-b-15">
                                     <form action="buku.php" method="POST">
                                         <div class="input-group">
-                                        <input type='text' class="form-control input-sm pull-right" style="width: 150px;"  name='qcari' placeholder='Cari berdasarkan Judul' required /> 
+                                        <input type='text' class="form-control input-sm pull-right" style="width: 350px;"  name='qcari' placeholder='Cari Judul Buku, Pengarang' required /> 
                                             <div class="input-group-btn">
                                                 <button class="btn btn-sm btn-default" type="submit"><i class="fa fa-search"></i></button>
                                             </div>
@@ -159,14 +159,21 @@ $_SESSION['start_time'] = time();
 								}else{
 									$posisi = ($hal - 1)*$batas;
 								}
-								$sql_plgn = mysql_query("select idBuku,Judul,Pengarang,Penerbit,NamaRak from tbl_buku , tbl_rak where tbl_rak.idRak = tbl_buku.idRak LIMIT $posisi,$batas")or die(mysql_error());
+								$sql_plgn = mysql_query("
+                                    select a.*,c.penerbit, b.NamaRak from tbl_buku a
+                                    LEFT JOIN tbl_rak b ON b.idRak = a.idRak
+                                    LEFT JOIN tbl_penerbit c ON c.id_penerbit = a.Penerbit
+                                    LIMIT $posisi,$batas")or die(mysql_error());
 								
 								
 								 if(isset($_POST['qcari'])){
-	               $qcari=$_POST['qcari'];
-	                $sql_plgn=mysql_query("select idBuku,Judul,Pengarang,Penerbit,NamaRak from tbl_buku , tbl_rak where tbl_rak.idRak = tbl_buku.idRak AND
-	                Judul like '%$qcari%'
-	               or Pengarang like '%$qcari%' ");
+	                $qcari=$_POST['qcari'];
+	                $sql_plgn=mysql_query("
+                        select a.*,c.penerbit, b.NamaRak from tbl_buku a
+                        LEFT JOIN tbl_rak b ON b.idRak = a.idRak
+                        LEFT JOIN tbl_penerbit c ON c.id_penerbit = a.Penerbit
+                        WHERE Judul like '%$qcari%' OR Pengarang like '%$qcari%'
+                    ");
                     }
                     //$tampil=mysql_query($sql_plgn) or die(mysql_error());
 								
@@ -184,17 +191,18 @@ $_SESSION['start_time'] = time();
 					<td><a href="buku-detail.php?hal=edit&kd=<?php echo $data['idBuku'];?>"><?php echo $data['idBuku']; ?></a></td>
                     <td><?php echo $data['Judul'];?></td>
 					<td><?php echo $data['Pengarang']; ?></td>
-                    <td><?php echo $data['Penerbit'];?></td>
+                    <td><?php echo $data['penerbit'];?></td>
 					<td><?php echo $data['NamaRak'];?></td>
-					<td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Buku" href="Buku-edit.php?hal=edit&kd=<?php echo $data['idBuku'];?>">Edit</a>
-                    <a onclick="return confirm ('Yakin hapus <?php echo $data['Judul'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Buku" href="buku-hapus.php?hal=hapus&kd=<?php echo $data['idBuku'];?>"><!--span class="glyphicon glyphicon-trash"-->Hapus</a></center></td></tr></div>
+					<td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Buku" href="Buku-edit.php?hal=edit&kd=<?php echo $data['idBuku'];?>"><i class="fa fa-edit"></i></a>
+                    <a onclick="return confirm ('Yakin hapus <?php echo $data['Judul'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Buku" href="buku-hapus.php?hal=hapus&kd=<?php echo $data['idBuku'];?>"><i class="fa fa-trash"></i></a></center></td></tr></div>
                  <?php   
 					}
               } 
               ?>
                    </tbody>
                    </table>
-				   <?php $tampil=mysql_query("select * from tbl_buku ");
+				   <?php $tampil=mysql_query(
+                        "select * from tbl_buku ");
                           $user=mysql_num_rows($tampil);
                     ?>
 				    <center><h4>Jumlah Total Buku : <?php echo "$user"; ?> Buah </h4> </center>
