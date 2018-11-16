@@ -52,7 +52,7 @@
 
                                 <li class="treeview">
                                 <a href="">
-                                    <i class="fa fa-user"></i>
+                                    <i class="fa fa-book"></i>
                                     <span>Data Buku</span>
                                     <i class="fa fa-angle-left pull-right"></i>
                                 </a>
