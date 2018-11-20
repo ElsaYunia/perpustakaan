@@ -52,8 +52,8 @@
             
         </div>
         <!--end: Logo -->
-          
-        <!--start: Navigation -->
+					
+ <!--start: Navigation -->
         <div class="span9">
           
           <div class="navbar navbar-inverse">
@@ -86,175 +86,110 @@
           
         </div>  
         <!--end: Navigation -->
-          
-      </div>
-      <!--end: Row -->
-      
-    </div>
-    <!--end: Container-->     
-      
-  </header>
-  <!--end: Header-->
-  
-  <!-- start: Slider -->
-  <div class="slider-wrapper">
+					
+			</div>
+			<!--end: Row -->
+			
+		</div>
+		<!--end: Container-->			
+			
+	</header>
+	<!--end: Header-->	
+	
+	<!-- start: Page Title -->
+	<div id="page-title">
 
-    <div id="da-slider" class="da-slider">
-      <div class="da-slide">
-        <h2>Graha Baca Online</h2>
-        <p>Kami menyediakan buku dan bacaan Terupdate.</p>
-        <a href="#" class="da-link">Lihat Buku</a>
-        <div class="da-img"><img src="dashboard/img/parallax-slider/bookD.jpg" alt="image01" /></div>
-      </div>
-      <div class="da-slide">
-        <h2>ENSIKLOPEDIA</h2>
-        <p>ababab</p>
-        <a href="#" class="da-link">Lihat Buku Tersedia</a>
-        <div class="da-img"><img src="dashboard/img/parallax-slider/slide1.jpg" alt="image02" /></div>
-      </div>
-      <div class="da-slide">
-        <h2>FILSAFAT</h2>
-        <p>ddddd</p>
-        <a href="#" class="da-link">Lihat Buku Tersedia</a>
-        <div class="da-img"><img src="img/parallax-slider/jeans.png" alt="image03" /></div>
-      </div>
-      <div class="da-slide">
-        <h2>MAHASISWA</h2>
-        <p>ABABAB</p>
-        <a href="#" class="da-link">Lihat Buku Tersedia</a>
-        <div class="da-img"><img src="img/parallax-slider/kaos.png" alt="image04" /></div>
-      </div>
-      <nav class="da-arrows">
-        <span class="da-arrows-prev"></span>
-        <span class="da-arrows-next"></span>
-      </nav>
-    </div>
-    
-  </div>
-  <!-- end: Slider -->
-      
-  <!--start: Wrapper-->
-  <div id="wrapper">
-        
-    <!--start: Container -->
-      <div class="container">
-  
-          <!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
-          <div class="hero-unit">
-            <p>
-          Kami adalah library online terlengkap dan terpercaya....Pinjam maks 7 hari. Lebih dari 7 hari dikenakan denda. Kantor Kami di : STMIK AKAKOM Yogyakarta. Dapatkan koleksi Buku favoritmu sekarang juga
-        </p>
-                                
-          </div>
-            <!--<div class="title"><h3>Keranjang Anda</h3></div>
-            <div class="hero-unit">
-            </div> -->
-      <!-- end: Hero Unit -->
+		<div id="page-title-inner">
 
-          <!-- start: Row -->
-            
-          <div class="row">
-                  <?php
-                    $sql = mysql_query("SELECT * FROM tbl_buku ORDER BY idBuku DESC limit 9");
-                    while($query = mysql_fetch_array($sql)){
-                    ?>
-            <div class="span4">
-                <div class="icons-box">
-                        <div class="title"><h3><?php echo $query['Judul']; ?></h3></div>
-                        <img src="<?php echo $query['Foto']; ?>" />
-          <!--  <p>
-            
-            </p> -->
-            <div class="clear"><a href="detailproduk.php?kd=<?php echo $data['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a> <a href="detailproduk.php?kd=<?php echo $data['br_id'];?>" class="btn btn-lg btn-success">Pinjam &raquo;</a></div>
-          
-                    </div>
-            </div>
-                <?php   
-              }
-              
-              
-              ?>
-<!---->
-          </div>
-      <!-- end: Row -->
-          
-      <hr>
-    
-      <hr>
-      
-      <!-- start: Row -->
-      <div class="row">
-        
-        <!-- start: Icon Boxes -->
-        <div class="icons-box-vert-container">
+			<!-- start: Container -->
+			<div class="container">
 
-          <!-- start: Icon Box Start -->
-          <div class="span6">
-            <div class="icons-box-vert">
-              <i class="ico-ok ico-color circle-color big"></i>
-              <div class="icons-box-vert-info">
-                <h3>Kemudahan Peminjaman</h3>
-                <p>Dapatkan kemudahan peminjaman buku di Graha Baca Online, Kami menyediakan buku bacaan terupdate.</p>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-          <!-- end: Icon Box-->
+				<h2>Keranjang</h2>
 
-          <!-- start: Icon Box Start -->
-          <div class="span6">
-            <div class="icons-box-vert">
-              <i class="ico-cup  ico-white circle-color-full big-color"></i>
-              <div class="icons-box-vert-info">
-                <h3>Kemudahan Mencari</h3>
-                <p>Dapatkan kemudahan pencarian buku-buku yang terbaru di Graha Baca Online.</p>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-          <!-- end: Icon Box -->
+			</div>
+			<!-- end: Container  -->
 
-          <!-- start: Icon Box Start -->
-          <div class="span6">
-            <div class="icons-box-vert">
-              <i class="ico-ipad ico-color circle-color big"></i>
-              <div class="icons-box-vert-info">
-                <h3>Berselancar dengan Gadget</h3>
-                <p>Anda bisa melihat review buku kami melalui gadget kesayangan anda, meminjam buku di Graha Baca Online praktis dan mudah.</p>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-          <!-- end: Icon Box -->
+		</div>	
 
-          <!-- start: Icon Box Start -->
-          <div class="span6">
-            <div class="icons-box-vert">
-              <i class="ico-thumbs-up  ico-white circle-color-full big-color"></i>
-              <div class="icons-box-vert-info">
-                <h3>Sosial Media</h3>
-                <p>Follow twitter dan fan page facebook kami untuk mendapatkan info menarik.</p>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-          <!-- end: Icon Box -->
+	</div>
+	<!-- end: Page Title -->
+	
+	<!--start: Wrapper-->
+	<div id="wrapper">
+				
+		<!-- start: Container -->
+		<div class="container">
 
-        </div>
-        <!-- end: Icon Boxes -->
-        <div class="clear"></div>
-      </div>
-      <!-- end: Row -->
-      
-      <hr>
-      
-    </div>
-    <!--end: Container-->
-  
-  </div>
-  <!-- end: Wrapper  -->      
+			<!-- start: Table -->
+            <div class="title"><h3>Detail Keranjang Peminjaman</h3></div>
+<table class="table table-hover table-condensed">
+<tr>
+					<th><center>No Peminjaman</center></th>
+                    <th><center>Kode Buku</center></th>
+					<th><center>Judul Buku</center></th>
+					<th><center>Penerbit</center></th>
+					<th><center>Jumlah</center></th>
+					<th><center>Tanggal Pinjam</center></th>
+					<th><center>Ket</center></th>
+				</tr>
+			    <?php
+				//MENAMPILKAN DETAIL KERANJANG BELANJA//
+                
+    $total = 0;
+    //mysql_select_db($database_conn, $conn);
+    if (isset($_SESSION['items'])) {
+        foreach ($_SESSION['items'] as $key => $val) {
+            $query = mysql_query($koneksi, "select * from buku where idBuku = '$key'");
+            $data = mysql_fetch_array($query);
 
-    <!-- start: Footer Menu -->
+            $jumlah_harga = $data['br_hrg'] * $val;
+            $total += $jumlah_harga;
+            $no = 1;
+            ?>
+                <tr>
+                <td><center><?php echo $no++; ?></center></td>
+                <td><center><?php echo $data['br_id']; ?></center></td>
+                <td><center><?php echo $data['br_nm']; ?></center></td>
+                <td><center><?php echo number_format($data['br_hrg']); ?></center></td>
+                <td><center><?php echo number_format($val); ?></center></td>
+                <td><center><?php echo number_format($jumlah_harga); ?></center></td>
+                <td><center><a href="cart.php?act=plus&amp;barang_id=<?php echo $key; ?>&amp;ref=detail.php" class="btn btn-xs btn-success">Tambah</a> <a href="cart.php?act=min&amp;barang_id=<?php echo $key; ?>&amp;ref=detail.php" class="btn btn-xs btn-warning">Kurang</a> <a href="cart.php?act=del&amp;barang_id=<?php echo $key; ?>&amp;ref=detail.php" class="btn btn-xs btn-danger">Hapus</a></center></td>
+                </tr>
+                
+					<?php
+                    //mysql_free_result($query);			
+						}
+							//$total += $sub;
+						}?>  
+                         <?php
+				if($total == 0){
+					echo '<tr><td colspan="5" align="center">Ups, Keranjang kosong!</td></tr></table>';
+					echo '<p><div align="right">
+						<a href="index.php" class="btn btn-info btn-lg">&laquo; Continue</a>
+						</div></p>';
+				} else {
+					echo '
+						<tr style="background-color: #DDD;"><td colspan="4" align="right"><b>Total :</b></td><td align="right"><b>Rp. '.number_format($total,2,",",".").'</b></td></td></td><td></td></tr></table>
+						<p><div align="right">
+						<a href="index.php" class="btn btn-info">&laquo; CONTINUE SHOPPING</a>
+						<a href="checkout.php?total='.$total.'" class="btn btn-success"><i class="glyphicon glyphicon-shopping-cart icon-white"></i> CHECK OUT &raquo;</a>
+						</div></p>
+					';
+				}
+				?>
+
+</table>
+			
+				
+			<!-- end: Table -->
+
+		</div>
+		<!-- end: Container -->
+				
+	</div>
+	<!-- end: Wrapper  -->			
+
+   <!-- start: Footer Menu -->
   <div id="footer-menu" class="hidden-tablet hidden-phone">
 
     <!-- start: Container -->

@@ -52,8 +52,8 @@
             
         </div>
         <!--end: Logo -->
-          
-        <!--start: Navigation -->
+					
+ <!--start: Navigation -->
         <div class="span9">
           
           <div class="navbar navbar-inverse">
@@ -86,98 +86,87 @@
           
         </div>  
         <!--end: Navigation -->
-          
-      </div>
-      <!--end: Row -->
-      
-    </div>
-    <!--end: Container-->     
-      
-  </header>
-  <!--end: Header-->
-  
-  <!-- start: Slider -->
-  <div class="slider-wrapper">
+					
+			</div>
+			<!--end: Row -->
+			
+		</div>
+		<!--end: Container-->			
+			
+	</header>
+	<!--end: Header-->
+	
+	<!-- start: Page Title -->
+	<div id="page-title">
 
-    <div id="da-slider" class="da-slider">
-      <div class="da-slide">
-        <h2>Graha Baca Online</h2>
-        <p>Kami menyediakan buku dan bacaan Terupdate.</p>
-        <a href="#" class="da-link">Lihat Buku</a>
-        <div class="da-img"><img src="dashboard/img/parallax-slider/bookD.jpg" alt="image01" /></div>
-      </div>
-      <div class="da-slide">
-        <h2>ENSIKLOPEDIA</h2>
-        <p>ababab</p>
-        <a href="#" class="da-link">Lihat Buku Tersedia</a>
-        <div class="da-img"><img src="dashboard/img/parallax-slider/slide1.jpg" alt="image02" /></div>
-      </div>
-      <div class="da-slide">
-        <h2>FILSAFAT</h2>
-        <p>ddddd</p>
-        <a href="#" class="da-link">Lihat Buku Tersedia</a>
-        <div class="da-img"><img src="img/parallax-slider/jeans.png" alt="image03" /></div>
-      </div>
-      <div class="da-slide">
-        <h2>MAHASISWA</h2>
-        <p>ABABAB</p>
-        <a href="#" class="da-link">Lihat Buku Tersedia</a>
-        <div class="da-img"><img src="img/parallax-slider/kaos.png" alt="image04" /></div>
-      </div>
-      <nav class="da-arrows">
-        <span class="da-arrows-prev"></span>
-        <span class="da-arrows-next"></span>
-      </nav>
-    </div>
-    
-  </div>
-  <!-- end: Slider -->
-      
-  <!--start: Wrapper-->
-  <div id="wrapper">
-        
-    <!--start: Container -->
-      <div class="container">
-  
-          <!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
-          <div class="hero-unit">
-            <p>
-          Kami adalah library online terlengkap dan terpercaya....Pinjam maks 7 hari. Lebih dari 7 hari dikenakan denda. Kantor Kami di : STMIK AKAKOM Yogyakarta. Dapatkan koleksi Buku favoritmu sekarang juga
-        </p>
-                                
-          </div>
-            <!--<div class="title"><h3>Keranjang Anda</h3></div>
+		<div id="page-title-inner">
+
+			<!-- start: Container -->
+			<div class="container">
+
+				<h2><i class="ico-stats ico-white"></i>Buku Tersedia</h2>
+
+			</div>
+			<!-- end: Container  -->
+
+		</div>	
+
+	</div>
+	<!-- end: Page Title -->
+	
+	<!--start: Wrapper-->
+	<div id="wrapper">
+				
+		<!--start: Container -->
+    	<div class="container"> 
+        <!--<div class="title"><h3>Keranjang Anda</h3></div>
             <div class="hero-unit">
-            </div> -->
-      <!-- end: Hero Unit -->
-
-          <!-- start: Row -->
+            </div> -->            
+      		<!-- start: Row -->
             
-          <div class="row">
-                  <?php
-                    $sql = mysql_query("SELECT * FROM tbl_buku ORDER BY idBuku DESC limit 9");
-                    while($query = mysql_fetch_array($sql)){
+      		<div class="row">
+	<?php
+                    $sql = mysql_query("SELECT * FROM tbl_buku ORDER BY idBuku DESC");
+	if(mysql_num_rows($sql) == 0){
+		echo "Tidak ada produk!";
+	}else{
+		while($query = mysql_fetch_assoc($sql)){
                     ?>
-            <div class="span4">
-                <div class="icons-box">
+        		<div class="span4">
+          			<div class="icons-box">
                         <div class="title"><h3><?php echo $query['Judul']; ?></h3></div>
-                        <img src="<?php echo $query['Foto']; ?>" />
-          <!--  <p>
-            
-            </p> -->
-            <div class="clear"><a href="detailproduk.php?kd=<?php echo $data['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a> <a href="detailproduk.php?kd=<?php echo $data['br_id'];?>" class="btn btn-lg btn-success">Pinjam &raquo;</a></div>
-          
+                        <img src="<?php echo $data['Foto']; ?>" />
+					<!--	<p>
+						
+						</p> -->
+						<div class="clear"><a href="detailproduk.php?hal=detailbarang&kd=<?php echo $data['br_id'];?>" class="btn btn-lg btn-danger">Detail</a> <a href="detailproduk.php?hal=detailbarang&kd=<?php echo $data['br_id'];?>" class="btn btn-lg btn-success">Beli &raquo;</a></div>
+
                     </div>
-            </div>
+        		</div>
                 <?php   
               }
-              
+              }
               
               ?>
 <!---->
-          </div>
-      <!-- end: Row -->
-          
+      		</div>
+			<!-- end: Row -->
+					
+					
+				</div>	
+				
+					
+				</div>
+				
+			</div>
+			<!--end: Row-->
+	
+		</div>
+		<!--end: Container-->
+				
+		<!--start: Container -->
+    	<div class="container">	
+      		
       <hr>
     
       <hr>
