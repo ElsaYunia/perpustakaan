@@ -223,7 +223,7 @@ $_SESSION['start_time'] = time();
 				   </div>
                   <!-- </div>-->
                 <div class="text-right" style="margin-top: 10px;">
-                 <a href="buku.php" class="btn btn-sm btn-info">Refresh Data <i class="fa fa-refresh"></i></a> <a href="buku-input.php" class="btn btn-sm btn-warning">Tambah Buku <i class="fa fa-arrow-circle-right"></i></a>
+                 <a href="buku.php" class="btn btn-sm btn-info">Refresh Data &nbsp;<i class="fa fa-refresh"></i></a> <a href="buku-input.php" class="btn btn-sm btn-warning">Tambah Buku &nbsp;<i class="fa fa-arrow-circle-right"></i></a>
                 </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->

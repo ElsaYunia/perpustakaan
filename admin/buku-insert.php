@@ -3,9 +3,9 @@ $namafolder="gambar_anggota/";
 
 include "../conn.php";
 
-if (!empty($_FILES["nama_file"]["tmp_name"]))
+if (!empty($_FILES["foto"]["tmp_name"]))
 {
-	$jenis_gambar=$_FILES['nama_file']['type'];
+	$jenis_gambar=$_FILES['foto']['type'];
     $id = $_POST['id'];
 	$judul = $_POST['judul'];
 	$pengarang = $_POST['pengarang'];
@@ -17,11 +17,9 @@ if (!empty($_FILES["nama_file"]["tmp_name"]))
 	$nama4 = $_POST['nama4'];
 	$isbn = $_POST['isbn'];
 	
-	
-	
 	if($jenis_gambar=="image/jpeg" || $jenis_gambar=="image/jpg" || $jenis_gambar=="image/gif" || $jenis_gambar=="image/x-png" || $jenis_gambar=="image/png"){
-		$gambar = $namafolder . basename($_FILES['nama_file']['name']);
-		if (move_uploaded_file($_FILES['nama_file']['tmp_name'], $gambar)) {
+		$gambar = $namafolder . basename($_FILES['foto']['name']);
+		if (move_uploaded_file($_FILES['foto']['tmp_name'], $gambar)) {
 			$cek="select idBuku from tbl_buku where idBuku='$id'";
 			$ada=mysql_query($cek) or die (mysql_error());
 			

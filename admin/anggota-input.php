@@ -5,7 +5,7 @@ if (empty($_SESSION['username'])){
 } else {
 	include "../conn.php";
 ?>
-<?php include "jenis-id.php"; ?>
+<!-- <?php include "jenis-id.php"; ?> -->
 <!DOCTYPE html>
 <html>
 <head>

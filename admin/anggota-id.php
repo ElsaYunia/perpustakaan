@@ -1,7 +1,8 @@
 
 <?php
+
 include "../conn.php";
-$carikode = mysql_query("select max(idBuku) from tbl_buku") or die (mysql_error());
+$carikode = mysql_query("select max(nrp) from tbl_anggota") or die (mysql_error());
   // menjadikannya array
   $datakode = mysql_fetch_array($carikode);
   // jika $datakode
@@ -11,8 +12,8 @@ $carikode = mysql_query("select max(idBuku) from tbl_buku") or die (mysql_error(
    $kode = (int) $nilaikode;
    // setiap $kode di tambah 1
    $kode = $kode + 1;
-   $kode_otomatis = "B".str_pad($kode, 4, "0", STR_PAD_LEFT);
+   $kode_otomatis = $kode;
   } else {
-   $kode_otomatis = "B001";
+   $kode_otomatis = "1";
   }
   ?>

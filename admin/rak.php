@@ -129,7 +129,7 @@ $_SESSION['start_time'] = time();
                                     <div class="box-tools m-b-15">
                                     <form action="rak.php" method="POST">
                                         <div class="input-group">
-                                        <input type='text' class="form-control input-sm pull-right" style="width: 150px;"  name='qcari' placeholder='Cari berdasarkan Nama Rak' required /> 
+                                        <input type='text' class="form-control input-sm pull-right" style="width: 250px;"  name='qcari' placeholder='Cari Nama Rak' required /> 
                                             <div class="input-group-btn">
                                                 <button class="btn btn-sm btn-default" type="submit"><i class="fa fa-search"></i></button>
                                             </div>
@@ -160,8 +160,8 @@ $_SESSION['start_time'] = time();
                     <tr>
                     <td><?php echo $data['idRak']; ?></td>
                     <td><?php echo $data['NamaRak'];?></td>
-					<td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit rak" href="rak-edit.php?hal=edit&kd=<?php echo $data['idRak'];?>">Edit</a>
-                    <a onclick="return confirm ('Yakin hapus <?php echo $data['NamaRak'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus rak" href="rak-hapus.php?hal=hapus&kd=<?php echo $data['idRak'];?>"><!--span class="glyphicon glyphicon-trash"-->Hapus</a></center></td></tr></div>
+					<td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit rak" href="rak-edit.php?hal=edit&kd=<?php echo $data['idRak'];?>"><i class="fa fa-edit"></i></a>
+                    <a onclick="return confirm ('Yakin hapus <?php echo $data['NamaRak'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus rak" href="rak-hapus.php?hal=hapus&kd=<?php echo $data['idRak'];?>"><i class="fa fa-trash"></i></a></center></td></tr></div>
                  <?php   
               } 
               ?>
@@ -169,7 +169,7 @@ $_SESSION['start_time'] = time();
                    </table>
                   <!-- </div>-->
                 <div class="text-right" style="margin-top: 10px;">
-                 <a href="rak.php" class="btn btn-sm btn-info">Refresh Data <i class="fa fa-refresh"></i></a> <a href="rak-input.php" class="btn btn-sm btn-warning">Tambah Rak <i class="fa fa-arrow-circle-right"></i></a>
+                 <a href="rak.php" class="btn btn-sm btn-info">Refresh Data  &nbsp;<i class="fa fa-refresh"></i></a> <a href="rak-input.php" class="btn btn-sm btn-warning">Tambah Rak  &nbsp;<i class="fa fa-arrow-circle-right"></i></a>
                 </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->

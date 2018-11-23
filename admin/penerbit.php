@@ -156,8 +156,8 @@ $_SESSION['start_time'] = time();
                     <td><?php echo $data['penerbit'];?></td>
                     <td><?php echo $data['alamat'];?></td>
                     <td><?php echo $data['telepon'];?></td>
-                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Penerbit" href="penerbit-edit.php?hal=edit&kd=<?php echo $data['id_penerbit'];?>">&nbsp;<i class="fa fa-edit"></i>&nbsp;Edit</a>
-                    <a onclick="return confirm ('Yakin hapus <?php echo $data['penerbit'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Penerbit" href="penerbit-hapus.php?hal=hapus&kd=<?php echo $data['id_penerbit'];?>"><i class="fa fa-edit"></i>&nbsp; Hapus</a></center></td></tr></div>
+                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Penerbit" href="penerbit-edit.php?hal=edit&kd=<?php echo $data['id_penerbit'];?>"><i class="fa fa-edit"></i></a>
+                    <a onclick="return confirm ('Yakin hapus <?php echo $data['penerbit'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Penerbit" href="penerbit-hapus.php?hal=hapus&kd=<?php echo $data['id_penerbit'];?>"><i class="fa fa-trash"></i></a></center></td></tr></div>
                  <?php
               }
               ?>

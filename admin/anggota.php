@@ -127,7 +127,7 @@ $_SESSION['start_time'] = time();
                                     <div class="box-tools m-b-15">
                                     <form action="anggota.php" method="POST">
                                         <div class="input-group">
-                                        <input type='text' class="form-control input-sm pull-right" style="width: 150px;"  name='qcari' placeholder='Cari berdasarkan Nama' required /> 
+                                        <input type='text' class="form-control input-sm pull-right" style="width: 250px;"  name='qcari' placeholder='Cari berdasarkan Nama' required /> 
                                             <div class="input-group-btn">
                                                 <button class="btn btn-sm btn-default" type="submit"><i class="fa fa-search"></i></button>
                                             </div>
@@ -148,7 +148,7 @@ $_SESSION['start_time'] = time();
 									<?php
 							  $tanggal = date("Y/m/d");
 							  $no = 1;
-							  $batas = 2;
+							  $batas = 10;
 							  $hal = @$_GET['hal'];
 							  if(empty($hal)){
 								$posisi = 0;
@@ -182,8 +182,8 @@ $_SESSION['start_time'] = time();
 										<td><?php echo $data['nama'];?></td>
 										<td><?php echo $data['jk']; ?></td>
 										<td><?php echo $data['hp'];?></td>
-										<td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Anggota" href="anggota-edit.php?hal=edit&kd=<?php echo $data['nrp'];?>">Edit</a>
-										<a onclick="return confirm ('Yakin hapus <?php echo $data['nama'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus anggota" href="anggota-hapus.php?hal=hapus&kd=<?php echo $data['nrp'];?>"><!--span class="glyphicon glyphicon-trash"-->Hapus</a></center></td></tr></div>
+										<td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Anggota" href="anggota-edit.php?hal=edit&kd=<?php echo $data['nrp'];?>"><i class="fa fa-edit"></i></a>
+										<a onclick="return confirm ('Yakin hapus <?php echo $data['nama'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus anggota" href="anggota-hapus.php?hal=hapus&kd=<?php echo $data['nrp'];?>"><i class="fa fa-trash"></i></a></center></td></tr></div>
 									 <!--?php   
 								  } 
 								  ?-->
@@ -214,7 +214,7 @@ $_SESSION['start_time'] = time();
 				   </div>
 				  
                 <div class="text-right" style="margin-top: 10px;">
-                 <a href="anggota.php" class="btn btn-sm btn-info">Refresh Data <i class="fa fa-refresh"></i></a> <a href="anggota-input.php" class="btn btn-sm btn-warning">Tambah Anggota <i class="fa fa-arrow-circle-right"></i></a>
+                 <a href="anggota.php" class="btn btn-sm btn-info">Refresh Data &nbsp;<i class="fa fa-refresh"></i></a> <a href="anggota-input.php" class="btn btn-sm btn-warning">Tambah Anggota  &nbsp;<i class="fa fa-arrow-circle-right"></i></a>
                 </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->

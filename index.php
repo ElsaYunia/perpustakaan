@@ -161,7 +161,7 @@
             <div class="span4">
                 <div class="icons-box">
                         <div class="title"><h3><?php echo $query['Judul']; ?></h3></div>
-                        <img src="<?php echo $query['Foto']; ?>" />
+                        <img src="<?php echo 'admin/'.$query['Foto']; ?>" />
           <!--  <p>
             
             </p> -->

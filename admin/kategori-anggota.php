@@ -123,7 +123,7 @@ $_SESSION['start_time'] = time();
                                     <div class="box-tools m-b-15">
                                     <form action="kategori-anggota.php" method="POST">
                                         <div class="input-group">
-                                        <input type='text' class="form-control input-sm pull-right" style="width: 150px;"  name='qcari' placeholder='Kategori Anggota ...' required />
+                                        <input type='text' class="form-control input-sm pull-right" style="width: 250px;"  name='qcari' placeholder='Kategori Anggota ...' required />
                                             <div class="input-group-btn">
                                                 <button class="btn btn-sm btn-default" type="submit"><i class="fa fa-search"></i></button>
                                             </div>
@@ -158,8 +158,8 @@ $_SESSION['start_time'] = time();
                     <td><?php echo $data['max_buku_pinjam'].' Eksemplar ';?></td>
                     <td><?php echo $data['max_hari_pinjam'].' Hari';?></td>
                     <td><?php echo $data['perpanjangan'].' Hari';?></td>
-                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit kategori Anggota" href="kategori-anggota-edit.php?hal=edit&kd=<?php echo $data['id_kategori_anggota'];?>">&nbsp;<i class="fa fa-edit"></i>&nbsp;Edit</a>
-                    <a onclick="return confirm ('Yakin hapus <?php echo $data['kategori_anggota'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus kategori Anggota" href="kategori-anggota-hapus.php?hal=hapus&kd=<?php echo $data['id_kategori_anggota'];?>"><i class="fa fa-edit"></i>&nbsp; Hapus</a></center></td></tr></div>
+                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit kategori Anggota" href="kategori-anggota-edit.php?hal=edit&kd=<?php echo $data['id_kategori_anggota'];?>">&nbsp;<i class="fa fa-edit"></i>&nbsp;</a>
+                    <a onclick="return confirm ('Yakin hapus <?php echo $data['kategori_anggota'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus kategori Anggota" href="kategori-anggota-hapus.php?hal=hapus&kd=<?php echo $data['id_kategori_anggota'];?>"><i class="fa fa-trash"></i>&nbsp;</a></center></td></tr></div>
                  <?php
               }
               ?>

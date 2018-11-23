@@ -123,7 +123,7 @@ $_SESSION['start_time'] = time();
                                     <div class="box-tools m-b-15">
                                     <form action="jenis.php" method="POST">
                                         <div class="input-group">
-                                        <input type='text' class="form-control input-sm pull-right" style="width: 150px;"  name='qcari' placeholder='Cari berdasarkan Jenis' required /> 
+                                        <input type='text' class="form-control input-sm pull-right" style="width: 250px;"  name='qcari' placeholder='Cari berdasarkan Jenis' required /> 
                                             <div class="input-group-btn">
                                                 <button class="btn btn-sm btn-default" type="submit"><i class="fa fa-search"></i></button>
                                             </div>
@@ -154,8 +154,8 @@ $_SESSION['start_time'] = time();
                     <tr>
                     <td><?php echo $data['idJenis']; ?></td>
                     <td><?php echo $data['NamaJenis'];?></td>
-                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit jenis" href="jenis-edit.php?hal=edit&kd=<?php echo $data['idJenis'];?>">Edit</a>
-                    <a onclick="return confirm ('Yakin hapus <?php echo $data['NamaJenis'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus jenis" href="jenis-hapus.php?hal=hapus&kd=<?php echo $data['idJenis'];?>"><!--span class="glyphicon glyphicon-trash"-->Hapus</a></center></td></tr></div>
+                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit jenis" href="jenis-edit.php?hal=edit&kd=<?php echo $data['idJenis'];?>"><i class="fa fa-edit"></i></a>
+                    <a onclick="return confirm ('Yakin hapus <?php echo $data['NamaJenis'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus jenis" href="jenis-hapus.php?hal=hapus&kd=<?php echo $data['idJenis'];?>"><i class="fa fa-trash"></i></a></center></td></tr></div>
                  <?php   
               } 
               ?>
@@ -163,7 +163,7 @@ $_SESSION['start_time'] = time();
                    </table>
                   <!-- </div>-->
                 <div class="text-right" style="margin-top: 10px;">
-                 <a href="jenis.php" class="btn btn-sm btn-info">Refresh Data <i class="fa fa-refresh"></i></a> <a href="jenis-input.php" class="btn btn-sm btn-warning">Tambah Jenis <i class="fa fa-arrow-circle-right"></i></a>
+                 <a href="jenis.php" class="btn btn-sm btn-info">Refresh Data  &nbsp;<i class="fa fa-refresh"></i></a> <a href="jenis-input.php" class="btn btn-sm btn-warning">Tambah Jenis  &nbsp;<i class="fa fa-arrow-circle-right"></i></a>
                 </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->

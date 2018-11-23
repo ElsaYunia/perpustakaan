@@ -5,7 +5,7 @@ if (empty($_SESSION['username'])){
 } else {
 	include "../conn.php";
 ?>
-<!--?php include"buku-id.php" ; ?-->
+<?php include"buku-id.php" ; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -110,7 +110,7 @@ if (empty($_SESSION['username'])){
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-2 control-label">Id Buku</label>
                                     <div class="col-sm-8">
-                                      <input name="id" type="text" id="id" class="form-control" required />
+                                       <input name="id" type="text" id="id" class="form-control" placeholder="Tidak perlu di isi" autofocus="on" value="<?php echo $kode_otomatis; ?>" readonly="readonly" />
                                     </div>
                                 </div>
                             <div class="form-group">
@@ -203,7 +203,7 @@ if (empty($_SESSION['username'])){
                             <div class="form-group">
                                 <label class="col-sm-2 col-sm-2 control-label">Gambar Buku</label>
                                 <div class="col-sm-8">
-                                      <input name="foto" id="nama_file" type="file" required />
+                                      <input name="foto" id="foto" type="file" required />
                                 </div>
                             </div>
 
