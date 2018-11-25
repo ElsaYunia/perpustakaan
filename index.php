@@ -293,14 +293,12 @@
 
                             <div class="col-md-3">
                                 <div class="widget_item widget_service sm-m-top-50">
-                                    <h5 class="text-white">Kategori Buku</h5>
+                                    <h5 class="text-white">JAM LAYANAN</h5>
                                     <ul class="m-top-20">
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Buku Utama Rujukan</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Buku Pendukung</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Buku Ensiklopedia</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Buku Filsafat</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Buku Luar Negeri</a></li>
-                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> Mahasiswa</a></li>
+                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> SENIN - KAMIS</a> <p>Buka jam 08.00 WIB - 19.00 WIB</p> </li>
+
+                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> JUM'AT</a><p>Buka jam 09.00 WIB - 19.30 WIB</p><p>ISTIRAHAT JAM 11.30-13.00 WIB</p></li>
+                                        <li class="m-top-20"><a href=""><i class="fa fa-angle-right"></i> SABTU - MINGGU</a><p>Buka jam 09.00 WIB - 14.00 WIB</p></li>
                                     </ul>
                                 </div><!-- End off widget item -->
                             </div><!-- End off col-md-3 -->
