@@ -1,4 +1,5 @@
-<?php include "conn.php"; ?>
+<?php include "conn.php";
+ ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -149,6 +150,7 @@
                    <table>
                        <tr>
                            <td>
+
                                <img src="assets/images/book1.jpg">
                                <div class="bookdetails">
                                    <div class="booktittle"><h5>To Kill a Mockingbird</h5></div>
