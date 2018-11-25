@@ -1,0 +1,137 @@
+/* home contnt */
+.conttitle {
+  margin: 20px 80px 10px 80px;
+}
+
+.conttitle a {
+  float: right;
+  margin-top: 15px;
+  color: #000;
+}
+
+.contfeatured {
+  border:1px solid #90a987;
+  margin: 20px 80px 100px 80px;
+  border-bottom-style: 1px solid #90a987;
+}
+
+.contfeatured table {
+  margin: 20px 20px;
+  width: 100%;
+
+}
+
+.contfeatured table td {
+  width: 50%;
+  
+}
+
+.contfeatured img {
+  max-width: 20%;
+  height: auto;
+  float: left;
+  margin: 0px 0px 0px 0px;
+  margin-top: 10px;
+
+}
+
+.bookdetails {
+  padding: 0px 0px 0px 20px;
+  float: left;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.booktittle {
+ 
+}
+
+.bookauthor {
+  font-size: 15px;
+}
+
+.bookresume {
+  float: left;
+  font-size: 12px
+}
+
+.book-display {
+  width: 80%;
+  margin: 20px 10% 0% 10%;
+  float: right;
+}
+
+.bd-image {
+  float: left;
+  width: 25%;
+}
+
+.bd-details {
+  float: left;
+  width: 73%;
+  font-size: 15px;
+  margin-left: 2%;
+}
+
+.actions {
+  float: right;
+  font-size: 13px;
+}
+
+.actions p {
+  text-align: right;
+}
+
+.bd-details input {
+  box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+.textbox {
+  margin-top: 30px;
+  width: 95%;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 15px;
+}
+
+.infolist {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.infolist li {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.infolist a {
+  text-decoration: none;
+}
+
+.infolist .active {
+  color: #333;
+  font-weight: bold;
+}
+
+.infotitle {
+  margin: 30px 0px 0px 2%;
+}
+
+.reg-form {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+}
+
+.reg-form input {
+  box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+.reg-form button {
+  margin-top: 10px;
+}

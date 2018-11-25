@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="assets/css/iconfont.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/content_n.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/bootsnav.css">
 
@@ -124,7 +125,7 @@
                     <!-- navbar menu -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>                    
+                            <li><a href="index.php">Home</a></li>                    
                             <li><a href="koleksi.php">Koleksi</a></li>
                             <li><a href="#business">Tentang</a></li>
                             <li><a href="#work">Ketentuan</a></li>
@@ -134,102 +135,114 @@
 
             </nav>
 
-            <!--Home Sections-->
+            <!--Body-->
 
             <section id="home" class="home bg-black fix"> 
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="main_home text-center">
-                            <div class="col-md-12">
-                                <div class="hello_slid">
-                                    <div class="slid_item">
-                                        <div class="home_text ">
-                                            <h2 class="text-white">A Humorous Fantasy Adventure</h2>
-                                            <h1 class="text-white">by William Tyler Davis</h1>
-                                            <h3 class="text-white">- The Hobbit meets Robin Hood: Men in Tights in this “slight” parody. -</h3>
-                                        </div>
-
-                                        <div class="home_btns m-top-40">
-                                            <a href="" class="btn btn-default m-top-20">Detail</a>
-                                        </div>
-                                    </div><!-- End off slid item -->
-                                    <div class="slid_item">
-                                        <div class="home_text ">
-                                            <h2 class="text-white">Ghost Detective</h2>
-                                            <h1 class="text-white">by Scott William Carter</h1>
-                                            <h3 class="text-white">- Everybody dies. Nobody leaves ... Award-winning author Scott William Carter returns with his tenth novel, a spellbinding tale of a man who bridges both sides of the great divide. -</h3>
-                                        </div>
-
-                                        <div class="home_btns m-top-40">
-                                            <a href="" class="btn btn-primary m-top-20">Detail</a>
-                                        </div>
-                                    </div><!-- End off slid item -->
-                                    <div class="slid_item">
-                                        <div class="home_text ">
-                                            <h2 class="text-white">Cold Press - A Gripping British Mystery Thriller</h2>
-                                            <h1 class="text-white">by David Bradwell</h1>
-                                            <h3 class="text-white">- Packed with intrigue, twists, conspiracies, and dark humour, Cold Press is a hugely entertaining British thriller-</h3>
-                                        </div>
-
-                                        <div class="home_btns m-top-40">
-                                            <a href="" class="btn btn-primary m-top-20">Detail</a>
-                                        </div>
-                                    </div><!-- End off slid item -->
+               <div class="row">
+             <div class="col-md-12" style="background-color: #ffffff;">
+       <a name="popular"></a>
+                <div class="conttitle">
+                    <b style="font-size: 25px">Popular and Available :</b>
+                    <a href="#">More books..</a>
+                </div>
+                <div class="contfeatured">
+                   <table>
+                       <tr>
+                           <td>
+                               <img src="assets/images/book1.jpg">
+                               <div class="bookdetails">
+                                   <div class="booktittle"><h5>To Kill a Mockingbird</h5></div>
+                                   <div class="bookauthor">by Lee, Harper</div>
+                                   <div class="bookresume">
+                                       <p>
+                                           <br>The unforgettable novel of a childhood <br> in a sleepy Southern town and the crisis of conscience
+                                           <br> that rocked it, To Kill A Mockingbird became both an <br>instant bestseller and a critical success when <br>it was first public.. <br>
+                                           <a href="#">Read More</a>
+                                       </p>
+                                   </div>
                                 </div>
-                            </div>
-
-                        </div>
-
-
-                    </div><!--End off row-->
-                </div><!--End off container -->
-            </section> <!--End off Home Sections-->
-
-
-
-            <!--Featured Section-->
-            <section id="features" class="features">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_features fix roomy-70">
-                            <div class="col-md-4">
-                                <div class="features_item sm-m-top-30">
-                                    <div class="f_item_icon">
-                                        <i class="fa fa-book"></i>
-                                    </div>
-                                    <div class="f_item_text">
-                                        <h3>Koleksi Buku</h3>
-                                        <p>Lebih dari 1.000.000 buku.</p>
-                                    </div>
+                           </td>
+                           <td>
+                               <img src="assets/images/book2.jpg">
+                               <div class="bookdetails">
+                                   <div class="booktittle"><h5>Mrs. Sherlock Holmes</h5></div>
+                                   <div class="bookauthor">by Rica, Brad</div>
+                                   <div class="bookresume">
+                                       <p>
+                                           <br>Mrs. Sherlock Holmes tells the incredible true life <br> story of Mrs. Grace Humiston, the New <br> York lawyer and detective who solved the <br>famous cold case of Ruth Cruger,<br> an 18-year-old girl who disappeared in..<br> 
+                                           <a href="#">Read More</a>
+                                       </p>
+                                   </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="features_item sm-m-top-30">
-                                    <div class="f_item_icon">
-                                        <i class="fa fa-user"></i>
-                                    </div>
-                                    <div class="f_item_text">
-                                        <h3>Anggota</h3>
-                                        <p>Lebih dari 100 Anggota Perpustakaan.</p>
-                                    </div>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <img src="assets/images/book3.jpg">
+                               <div class="bookdetails">
+                                   <div class="booktittle"><h5>Sherlock Holmes : The <br>Complete Novel and <br>Story Vol.1 </h5></div>
+                                   <div class="bookauthor">by Doyle, Arthur Conan</div>
+                                   <div class="bookresume">
+                                       <p>
+                                           <br>The unforgettable novel of a childhood  in a sleepy Southern town and the crisis of conscience
+                                            that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first public..<br> 
+                                           <a href="#">Read More</a>
+                                       </p>
+                                   </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="features_item sm-m-top-30">
-                                    <div class="f_item_icon">
-                                        <i class="fa fa-sliders"></i>
-                                    </div>
-                                    <div class="f_item_text">
-                                        <h3>Update Harian</h3>
-                                        <p>Update Buku secara periodik</p>
-                                    </div>
+                           </td>
+                           <td>
+                               <img src="assets/images/book4.jpg">
+                               <div class="bookdetails">
+                                   <div class="booktittle"><h5>Harry Potter and the Cursed Child</h5></div>
+                                   <div class="bookauthor">by Rowling, J.K</div>
+                                   <div class="bookresume">
+                                       <p>
+                                           <br>Based on an original new story by J.K. Rowling, John Tiffany, and Jack Thorne, a new play by Jack Thorne, Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the first official Harry Potter story to be presen ..<br> 
+                                           <a href="#">Read More</a>
+                                       </p>
+                                   </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div><!-- End off row -->
-                </div><!-- End off container -->
-            </section><!-- End off Featured Section-->
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <img src="assets/images/book7.jpg">
+                               <div class="bookdetails">
+                                   <div class="booktittle"><h5>The Orphan's Tale</h5></div>
+                                   <div class="bookauthor">by Jenoff, Pam</div>
+                                   <div class="bookresume">
+                                       <p>
+                                           <br>"Readers who enjoyed Kristin Hannah's The Nightingale and Sara Gruen's Water for Elephants will embrace this novel. " --Library Journal"Secrets, lies, treachery, and passion.... I read this novel in a headlong rush." --Christina Baker Klin ..<br> 
+                                           <a href="#">Read More</a>
+                                       </p>
+                                   </div>
+                                </div>
+                           </td>
+                           <td>
+                               <img src="assets/images/book8.jpg">
+                               <div class="bookdetails">
+                                   <div class="booktittle"><h5>The Nightingale</h5></div>
+                                   <div class="bookauthor">by Hannah, Christine</div>
+                                   <div class="bookresume">
+                                       <p>
+                                           <br>The Nightingale. A phenomenon that has enthralled a generation of readers.*Goodreads Best Historical Novel of the Year*People's Choice Favorite Fiction Winner*#1 Indie Next Selection*Buzzfeed Best of the Year*The Wall Street Journal Best of the YearThe Week Best of the Ye ..<br> 
+                                           <a href="#">Read More</a>
+                                       </p>
+                                   </div>
+                                </div>
+                           </td>
+                       </tr>
+                   </table>
+                </div>
+             </div>
+        </div>
+            </section> 
+
+            <!--End Body-->
+
+
+
 
             <footer id="contact" class="footer action-lage bg-black p-top-80">
                 <!--<div class="action-lage"></div>-->
