@@ -9,6 +9,10 @@
         <title>Graha Baca Online</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--slider-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <!--Google Font link-->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -22,15 +26,10 @@
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/bootsnav.css">
-
         <!-- xsslider slider css -->
 
 
         <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
-
-
-
-
         <!--For Plugins external css-->
         <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
 
@@ -124,21 +123,62 @@
                     <!-- navbar menu -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>                    
+                            <li><a href="index.php">Home</a></li>                    
                             <li><a href="koleksi.php">Koleksi</a></li>
-                            <li><a href="#business">Tentang</a></li>
-                            <li><a href="#work">Ketentuan</a></li>
+                            <li><a href="tentang.php">Tentang</a></li>
+                            <li><a href="ketentuan.php">Ketentuan</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div> 
-
             </nav>
+            </div>
+
 
             <!--Home Sections-->
+            <div class="container">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
 
-            <section id="home" class="home bg-black fix"> 
-       
-            </section> <!--End off Home Sections-->
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="assets/images/gambar.jpg" alt="buku" style="width:100%;">
+                            <div class="carousel-caption d-none d-md-block">
+                            <p>Tersedia banyak buku</p>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <img src="assets/images/gambar2.jpg" alt="pelayanan" style="width:100%;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Pelayanan Yang Ramah</p>
+                        </div>
+                      </div>
+                    
+                      <div class="item">
+                        <img src="assets/images/gambar3.jpg" alt="tempat" style="width:100%;">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p>Tempat yang nyaman</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
 
 
 

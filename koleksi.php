@@ -128,17 +128,16 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.php">Home</a></li>                    
                             <li><a href="koleksi.php">Koleksi</a></li>
-                            <li><a href="#business">Tentang</a></li>
+                            <li><a href="tentang.php">Tentang</a></li>
                             <li><a href="#work">Ketentuan</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
-                </div> 
+                  </div>
+                  </nav>
 
-            </nav>
 
             <!--Body-->
-
-            <section id="home" class="home bg-black fix"> 
+            <div class="home">
                <div class="row">
              <div class="col-md-12" style="background-color: #ffffff;">
        <a name="popular"></a>
@@ -239,7 +238,8 @@
                 </div>
              </div>
         </div>
-            </section> 
+        </div>
+
 
             <!--End Body-->
 
