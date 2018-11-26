@@ -137,53 +137,7 @@
             <!--Home Sections-->
 
             <section id="home" class="home bg-black fix"> 
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="main_home text-center">
-                            <div class="col-md-12">
-                                <div class="hello_slid">
-                                    <div class="slid_item">
-                                        <div class="home_text ">
-                                            <h2 class="text-white">A Humorous Fantasy Adventure</h2>
-                                            <h1 class="text-white">by William Tyler Davis</h1>
-                                            <h3 class="text-white">- The Hobbit meets Robin Hood: Men in Tights in this “slight” parody. -</h3>
-                                        </div>
-
-                                        <div class="home_btns m-top-40">
-                                            <a href="" class="btn btn-default m-top-20">Detail</a>
-                                        </div>
-                                    </div><!-- End off slid item -->
-                                    <div class="slid_item">
-                                        <div class="home_text ">
-                                            <h2 class="text-white">Ghost Detective</h2>
-                                            <h1 class="text-white">by Scott William Carter</h1>
-                                            <h3 class="text-white">- Everybody dies. Nobody leaves ... Award-winning author Scott William Carter returns with his tenth novel, a spellbinding tale of a man who bridges both sides of the great divide. -</h3>
-                                        </div>
-
-                                        <div class="home_btns m-top-40">
-                                            <a href="" class="btn btn-primary m-top-20">Detail</a>
-                                        </div>
-                                    </div><!-- End off slid item -->
-                                    <div class="slid_item">
-                                        <div class="home_text ">
-                                            <h2 class="text-white">Cold Press - A Gripping British Mystery Thriller</h2>
-                                            <h1 class="text-white">by David Bradwell</h1>
-                                            <h3 class="text-white">- Packed with intrigue, twists, conspiracies, and dark humour, Cold Press is a hugely entertaining British thriller-</h3>
-                                        </div>
-
-                                        <div class="home_btns m-top-40">
-                                            <a href="" class="btn btn-primary m-top-20">Detail</a>
-                                        </div>
-                                    </div><!-- End off slid item -->
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div><!--End off row-->
-                </div><!--End off container -->
+       
             </section> <!--End off Home Sections-->
 
 

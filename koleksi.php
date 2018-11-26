@@ -159,7 +159,7 @@
                                        <p>
                                            <br>The unforgettable novel of a childhood <br> in a sleepy Southern town and the crisis of conscience
                                            <br> that rocked it, To Kill A Mockingbird became both an <br>instant bestseller and a critical success when <br>it was first public.. <br>
-                                           <a href="#">Read More</a>
+                                           <a href="#">Detail</a>
                                        </p>
                                    </div>
                                 </div>
@@ -172,7 +172,7 @@
                                    <div class="bookresume">
                                        <p>
                                            <br>Mrs. Sherlock Holmes tells the incredible true life <br> story of Mrs. Grace Humiston, the New <br> York lawyer and detective who solved the <br>famous cold case of Ruth Cruger,<br> an 18-year-old girl who disappeared in..<br> 
-                                           <a href="#">Read More</a>
+                                           <a href="#">Detail</a>
                                        </p>
                                    </div>
                                 </div>
@@ -188,7 +188,7 @@
                                        <p>
                                            <br>The unforgettable novel of a childhood  in a sleepy Southern town and the crisis of conscience
                                             that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first public..<br> 
-                                           <a href="#">Read More</a>
+                                           <a href="#">Detail</a>
                                        </p>
                                    </div>
                                 </div>
@@ -201,7 +201,7 @@
                                    <div class="bookresume">
                                        <p>
                                            <br>Based on an original new story by J.K. Rowling, John Tiffany, and Jack Thorne, a new play by Jack Thorne, Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the first official Harry Potter story to be presen ..<br> 
-                                           <a href="#">Read More</a>
+                                           <a href="#">Detail</a>
                                        </p>
                                    </div>
                                 </div>
@@ -216,7 +216,7 @@
                                    <div class="bookresume">
                                        <p>
                                            <br>"Readers who enjoyed Kristin Hannah's The Nightingale and Sara Gruen's Water for Elephants will embrace this novel. " --Library Journal"Secrets, lies, treachery, and passion.... I read this novel in a headlong rush." --Christina Baker Klin ..<br> 
-                                           <a href="#">Read More</a>
+                                           <a href="#">Detail</a>
                                        </p>
                                    </div>
                                 </div>
@@ -229,7 +229,7 @@
                                    <div class="bookresume">
                                        <p>
                                            <br>The Nightingale. A phenomenon that has enthralled a generation of readers.*Goodreads Best Historical Novel of the Year*People's Choice Favorite Fiction Winner*#1 Indie Next Selection*Buzzfeed Best of the Year*The Wall Street Journal Best of the YearThe Week Best of the Ye ..<br> 
-                                           <a href="#">Read More</a>
+                                           <a href="#">Detail</a>
                                        </p>
                                    </div>
                                 </div>
