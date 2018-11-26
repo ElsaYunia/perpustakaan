@@ -170,10 +170,7 @@ p {
 }
 
 img {
-    max-width: 35%;
-
-.nav-logo img {
-    max-width: 20px;
+    max-width: 100%;
 }
 textarea,
 input[type="text"],
@@ -873,7 +870,7 @@ Home Section style
 ==================*/
 
 .home{
-    background-color: #ffffff;
+    background: url(../images/slide1.jpg) no-repeat scroll  center center;
     background-size: cover;
     position: relative;
     padding-top: 300px;
