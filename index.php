@@ -129,10 +129,10 @@
                              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tentang
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a href="#">Profil</a></li>
-                            <li><a href="#">Tujuan, Visi & Misi</a></li>
-                            <li><a href="#">Struktur Organisasi</a></li>
-                            <li><a href="#">Kontak</a></li>
+                            <li><a href="profil.php">Profil</a></li>
+                            <li><a href="tujuan.php">Tujuan, Visi & Misi</a></li>
+                            <li><a href="struktur.php">Struktur Organisasi</a></li>
+                            <li><a href="kontak.php">Kontak</a></li>
                         </ul>
                      </li>
                             <li><a href="ketentuan.php">Ketentuan</a></li>

@@ -132,10 +132,10 @@
                              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tentang
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a href="#">Profil</a></li>
-                            <li><a href="#">Tujuan, Visi & Misi</a></li>
-                            <li><a href="#">Struktur Organisasi</a></li>
-                            <li><a href="#">Kontak</a></li>
+                            <li><a href="profil.php">Profil</a></li>
+                            <li><a href="tujuan.php">Tujuan, Visi & Misi</a></li>
+                            <li><a href="struktur.php">Struktur Organisasi</a></li>
+                            <li><a href="kontak.php">Kontak</a></li>
                         </ul>
                      </li>
                             <li><a href="ketentuan.php">Ketentuan</a></li>
@@ -154,6 +154,20 @@
             <hr>
             <hr>
             <hr>
+            <div id="contentpane" class="article">
+                <div class="container">
+                 <div class="heading">
+                <h2 class="bebas">Profil Graha Baca Online</h2>
+           </div>
+        <hr/>
+                <ol>E-Library yang menyediakan bacaan buku terlengkap di Yogyakarta. Dengan lebih dari 1.000.000 Buku dan 100 member.</ol>
+                <img src="assets/images/branch.jpg">
+                <p>&nbsp;</p>
+        </div>
+        </div>
+
+
+
 
             <!--End Body-->
 

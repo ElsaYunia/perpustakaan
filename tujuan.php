@@ -25,10 +25,6 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/bootsnav.css">
 
-  <link href="koleksi/css/bootstrap.css" rel="stylesheet">
-  <link href="koleksi/css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="koleksi/css/style.css" rel="stylesheet">
-
         <!-- xsslider slider css -->
 
 
@@ -95,7 +91,6 @@
                     </div>
                 </div>
 
-
                 <!-- Start Top Search -->
                 <div class="top-search">
                     <div class="container">
@@ -106,7 +101,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- End Top Search -->
 
 
@@ -142,6 +136,7 @@
                             <li><a href="tujuan.php">Tujuan, Visi & Misi</a></li>
                             <li><a href="struktur.php">Struktur Organisasi</a></li>
                             <li><a href="kontak.php">Kontak</a></li>
+                        </ul>
                      </li>
                             <li><a href="ketentuan.php">Ketentuan</a></li>
                         </ul>
@@ -150,9 +145,8 @@
             </nav>
             </div>
 
-
-
             <!--Body-->
+
             <hr>
             <hr>
             <hr>
@@ -160,32 +154,38 @@
             <hr>
             <hr>
             <hr>
-            <h2><center>KOLEKSI BUKU</center></h2>
-            <div class="row">
-                  <?php
-                    $sql = mysql_query("SELECT * FROM tbl_buku ORDER BY idBuku DESC limit 5");
-                    while($query = mysql_fetch_array($sql)){
-                    ?>
-            <div class="span4">
-                <div class="icons-box">
-                        <div class="title"><h3><?php echo $query['Judul']; ?></h3></div>
-                        <img src="<?php echo 'admin/'.$query['Foto']; ?>" />
-          <!--  <p>
-            
-            </p> -->
-            <div class="clear"><a href="detailproduk.php?kd=<?php echo $data['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a></a></div>
-          
-                    </div>
-            </div>
-                <?php   
-              }
-              
-              
-              ?>
-        <!---->
-          </div>
-      <!-- end: Row -->
-                               
+            <div id="contentpane" class="article">
+                <div class="container">
+                 <div class="heading">
+                <h2 class="bebas">Tujuan, Visi & Misi</h2>
+                <blockquote>
+                    Graha Baca Online adalah perpustakaan modern di Provinsi DIY yang dibentuk pada tanggal 30 November tahun 2010. Kami sendiri awalnya hanya sekumpulan orang yang senang mengoleksi buku. Lalu kami membentuk perpustakaan ini untuk menyatukan hoby kami.
+                </blockquote>
+           </div>
+        <hr/>
+                <h3>Tujuan</h3>
+                <ol>
+                    <li>Meningkatkan Pelayanan Akses informasi koleksi perpustakaan melalui media yang seragam serta berbasis teknologi informasi sehingga dapat memperluas cakupan pengguna layanannya</li>
+                    <li>Meningkatkan nilai tambah bagi masyarakat khususnya dunia pendidikan, serta meningkatkan pelayanan bagi pengguna perpustakaan khususnya dan masyarakat pada umumnya dalam rangka mendukung Yogyakarta sebagai kota pendidikan, budaya dan tujuan wisata</li>
+                </ol>
+                <h3>Visi</h3>
+                <ol>
+                    "Menjadi perpustakaan terpadu untuk menciptakan sumber daya yang informatif"
+                </ol>
+                <h3>Misi</h3>
+                <ol>
+                    <li>Memberikan kemudahan masyarakat dalam aksesibilitas informasi</li>
+                    <li>Meningkatkan kualitas layanan perpustakaan secara umum</li>
+                    <li>Memperkuat infrastruktur TI</li>
+                    <li>Memaksimalkan penyediaan sumber daya</li>
+                    <li>Mengatasi isolasi pada perpustakaan</li>
+                <p>&nbsp;</p>
+        </div>
+        </div>
+
+
+
+
             <!--End Body-->
 
 
