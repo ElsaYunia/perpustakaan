@@ -125,7 +125,15 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.php">Home</a></li>                    
                             <li><a href="koleksi.php">Koleksi</a></li>
-                            <li><a href="tentang.php">Tentang</a></li>
+                            <li class="dropdown">
+                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tentang
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                        </ul>
+                     </li>
                             <li><a href="ketentuan.php">Ketentuan</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->

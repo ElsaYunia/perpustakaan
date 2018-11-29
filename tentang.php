@@ -128,8 +128,16 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.php">Home</a></li>                    
                             <li><a href="koleksi.php">Koleksi</a></li>
-                            <li><a href="#business">Tentang</a></li>
-                            <li><a href="#work">Ketentuan</a></li>
+                            <li><a href="tentang.php">Tentang</a>
+                            <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+    </li>
+                            <li><a href="ketentuan.php">Ketentuan</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div> 
@@ -138,8 +146,13 @@
 
             <!--Body-->
 
-            <section id="home" class="home bg-black fix"> 
-            </section> 
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
 
             <!--End Body-->
 
