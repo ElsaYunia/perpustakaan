@@ -25,6 +25,10 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/bootsnav.css">
 
+  <link href="koleksi/css/bootstrap.css" rel="stylesheet">
+  <link href="koleksi/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="koleksi/css/style.css" rel="stylesheet">
+
         <!-- xsslider slider css -->
 
 
@@ -138,109 +142,34 @@
 
             <!--Body-->
             <div class="home">
-               <div class="row">
-             <div class="col-md-12" style="background-color: #ffffff;">
-       <a name="popular"></a>
-                <div class="conttitle">
-                    <b style="font-size: 25px">Popular and Available :</b>
-                    <a href="#">More books..</a>
-                </div>
-                <div class="contfeatured">
-                   <table>
-                       <tr>
-                           <td>
-
-                               <img src="assets/images/book1.jpg">
-                               <div class="bookdetails">
-                                   <div class="booktittle"><h5>To Kill a Mockingbird</h5></div>
-                                   <div class="bookauthor">by Lee, Harper</div>
-                                   <div class="bookresume">
-                                       <p>
-                                           <br>The unforgettable novel of a childhood <br> in a sleepy Southern town and the crisis of conscience
-                                           <br> that rocked it, To Kill A Mockingbird became both an <br>instant bestseller and a critical success when <br>it was first public.. <br>
-                                           <a href="#">Detail</a>
-                                       </p>
-                                   </div>
-                                </div>
-                           </td>
-                           <td>
-                               <img src="assets/images/book2.jpg">
-                               <div class="bookdetails">
-                                   <div class="booktittle"><h5>Mrs. Sherlock Holmes</h5></div>
-                                   <div class="bookauthor">by Rica, Brad</div>
-                                   <div class="bookresume">
-                                       <p>
-                                           <br>Mrs. Sherlock Holmes tells the incredible true life <br> story of Mrs. Grace Humiston, the New <br> York lawyer and detective who solved the <br>famous cold case of Ruth Cruger,<br> an 18-year-old girl who disappeared in..<br> 
-                                           <a href="#">Detail</a>
-                                       </p>
-                                   </div>
-                                </div>
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>
-                               <img src="assets/images/book3.jpg">
-                               <div class="bookdetails">
-                                   <div class="booktittle"><h5>Sherlock Holmes : The <br>Complete Novel and <br>Story Vol.1 </h5></div>
-                                   <div class="bookauthor">by Doyle, Arthur Conan</div>
-                                   <div class="bookresume">
-                                       <p>
-                                           <br>The unforgettable novel of a childhood  in a sleepy Southern town and the crisis of conscience
-                                            that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first public..<br> 
-                                           <a href="#">Detail</a>
-                                       </p>
-                                   </div>
-                                </div>
-                           </td>
-                           <td>
-                               <img src="assets/images/book4.jpg">
-                               <div class="bookdetails">
-                                   <div class="booktittle"><h5>Harry Potter and the Cursed Child</h5></div>
-                                   <div class="bookauthor">by Rowling, J.K</div>
-                                   <div class="bookresume">
-                                       <p>
-                                           <br>Based on an original new story by J.K. Rowling, John Tiffany, and Jack Thorne, a new play by Jack Thorne, Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the first official Harry Potter story to be presen ..<br> 
-                                           <a href="#">Detail</a>
-                                       </p>
-                                   </div>
-                                </div>
-                           </td>
-                       </tr>
-                       <tr>
-                           <td>
-                               <img src="assets/images/book7.jpg">
-                               <div class="bookdetails">
-                                   <div class="booktittle"><h5>The Orphan's Tale</h5></div>
-                                   <div class="bookauthor">by Jenoff, Pam</div>
-                                   <div class="bookresume">
-                                       <p>
-                                           <br>"Readers who enjoyed Kristin Hannah's The Nightingale and Sara Gruen's Water for Elephants will embrace this novel. " --Library Journal"Secrets, lies, treachery, and passion.... I read this novel in a headlong rush." --Christina Baker Klin ..<br> 
-                                           <a href="#">Detail</a>
-                                       </p>
-                                   </div>
-                                </div>
-                           </td>
-                           <td>
-                               <img src="assets/images/book8.jpg">
-                               <div class="bookdetails">
-                                   <div class="booktittle"><h5>The Nightingale</h5></div>
-                                   <div class="bookauthor">by Hannah, Christine</div>
-                                   <div class="bookresume">
-                                       <p>
-                                           <br>The Nightingale. A phenomenon that has enthralled a generation of readers.*Goodreads Best Historical Novel of the Year*People's Choice Favorite Fiction Winner*#1 Indie Next Selection*Buzzfeed Best of the Year*The Wall Street Journal Best of the YearThe Week Best of the Ye ..<br> 
-                                           <a href="#">Detail</a>
-                                       </p>
-                                   </div>
-                                </div>
-                           </td>
-                       </tr>
-                   </table>
-                </div>
-             </div>
-        </div>
-        </div>
-
-
+            
+            <!-- start: Row -->
+            
+            <div class="row">
+                  <?php
+                    $sql = mysql_query("SELECT * FROM tbl_buku ORDER BY idBuku DESC limit 5");
+                    while($query = mysql_fetch_array($sql)){
+                    ?>
+            <div class="span4">
+                <div class="icons-box">
+                        <div class="title"><h3><?php echo $query['Judul']; ?></h3></div>
+                        <img src="<?php echo 'admin/'.$query['Foto']; ?>" />
+          <!--  <p>
+            
+            </p> -->
+            <div class="clear"><a href="detailproduk.php?kd=<?php echo $data['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a> &raquo;</a></div>
+          
+                    </div>
+            </div>
+                <?php   
+              }
+              
+              
+              ?>
+        <!---->
+          </div>
+      <!-- end: Row -->
+                               
             <!--End Body-->
 
 
