@@ -54,8 +54,8 @@
                                 <!-- <div class="box-header"> -->
                                     <!-- <h3 class="box-title">Responsive Hover Table</h3> -->
                     <?php
-                    $query = mysql_query("select idBuku,Judul,Pengarang,Penerbit,thnTerbit,NamaJenis,stok,NamaRak,tglInput,Foto from tbl_buku , tbl_jenis_buku,tbl_rak WHERE tbl_jenis_buku.idJenis = tbl_buku.idJenis AND tbl_rak.idRak = tbl_buku.idRak AND idBuku='$_GET[kd]'");
-                    $data  = mysql_fetch_array($query);
+                    $query = mysqli_query($con, "select idBuku,Judul,Pengarang,Penerbit,thnTerbit,NamaJenis,stok,NamaRak,tglInput,Foto from tbl_buku , tbl_jenis_buku,tbl_rak WHERE tbl_jenis_buku.idJenis = tbl_buku.idJenis AND tbl_rak.idRak = tbl_buku.idRak AND idBuku='$_GET[kd]'");
+                    $data  = mysqli_fetch_array($query);
                     ?>
                                 <!-- </div> -->
                                 <div class="panel-body">
@@ -98,7 +98,7 @@
                    </table>
                   
                 <div class="text-right">
-                <a href="buku.php" class="btn btn-sm btn-warning"> Kembali <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="koleksi.php" class="btn btn-sm btn-warning"> Kembali <i class="fa fa-arrow-circle-right"></i></a>
                 </div>  
                                 </div>
                             </div><!-- /.box -->

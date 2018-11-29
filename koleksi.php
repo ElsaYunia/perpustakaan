@@ -163,8 +163,8 @@
             <h2><center>KOLEKSI BUKU</center></h2>
             <div class="row">
                   <?php
-                    $sql = mysql_query("SELECT * FROM tbl_buku ORDER BY idBuku DESC limit 5");
-                    while($query = mysql_fetch_array($sql)){
+                    $sql = mysqli_query($con, "SELECT * FROM tbl_buku ORDER BY idBuku DESC limit 5");
+                    while($query = mysqli_fetch_array($sql)){
                     ?>
             <div class="span4">
                 <div class="icons-box">
@@ -173,7 +173,7 @@
           <!--  <p>
             
             </p> -->
-            <div class="clear"><a href="detailproduk.php?kd=<?php echo $data['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a></a></div>
+            <div class="clear"><a href="buku-detail.php?kd=<?php echo $query['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a></a></div>
           
                     </div>
             </div>
