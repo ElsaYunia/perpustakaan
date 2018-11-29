@@ -120,8 +120,8 @@ $_SESSION['start_time'] = time();
                                 <!-- <div class="box-header"> -->
                                     <!-- <h3 class="box-title">Responsive Hover Table</h3> -->
                     <?php
-                    $query = mysql_query("SELECT * FROM tbl_user WHERE id='$_GET[kd]'");
-                    $data  = mysql_fetch_array($query);
+                    $query = mysqli_query($con, "SELECT * FROM tbl_user WHERE id='$_GET[kd]'");
+                    $data  = mysqli_fetch_array($query);
                     ?>
                                 <!-- </div> -->
                                 <div class="panel-body">
