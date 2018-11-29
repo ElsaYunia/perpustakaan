@@ -129,9 +129,10 @@
                              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tentang
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Profil</a></li>
+                            <li><a href="#">Tujuan, Visi & Misi</a></li>
+                            <li><a href="#">Struktur Organisasi</a></li>
+                            <li><a href="#">Kontak</a></li>
                         </ul>
                      </li>
                             <li><a href="ketentuan.php">Ketentuan</a></li>
@@ -140,7 +141,6 @@
                 </div> 
             </nav>
             </div>
-
 
             <!--Home Sections-->
             <div class="container">

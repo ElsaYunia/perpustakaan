@@ -25,10 +25,6 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/bootsnav.css">
 
-  <link href="koleksi/css/bootstrap.css" rel="stylesheet">
-  <link href="koleksi/css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="koleksi/css/style.css" rel="stylesheet">
-
         <!-- xsslider slider css -->
 
 
@@ -95,7 +91,6 @@
                     </div>
                 </div>
 
-
                 <!-- Start Top Search -->
                 <div class="top-search">
                     <div class="container">
@@ -106,7 +101,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- End Top Search -->
 
 
@@ -151,9 +145,8 @@
             </nav>
             </div>
 
-
-
             <!--Body-->
+
             <hr>
             <hr>
             <hr>
@@ -161,32 +154,26 @@
             <hr>
             <hr>
             <hr>
-            <h2><center>KOLEKSI BUKU</center></h2>
-            <div class="row">
-                  <?php
-                    $sql = mysql_query("SELECT * FROM tbl_buku ORDER BY idBuku DESC limit 5");
-                    while($query = mysql_fetch_array($sql)){
-                    ?>
-            <div class="span4">
-                <div class="icons-box">
-                        <div class="title"><h3><?php echo $query['Judul']; ?></h3></div>
-                        <img src="<?php echo 'admin/'.$query['Foto']; ?>" />
-          <!--  <p>
-            
-            </p> -->
-            <div class="clear"><a href="detailproduk.php?kd=<?php echo $data['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a></a></div>
-          
-                    </div>
-            </div>
-                <?php   
-              }
-              
-              
-              ?>
-        <!---->
-          </div>
-      <!-- end: Row -->
-                               
+            <div id="contentpane" class="article">
+                <div class="container">
+                 <div class="heading">
+                <h2 class="bebas">Ketentuan Peminjaman</h2>
+           </div>
+        <hr/>
+                <h4>Peminjaman</h4>
+                <ol>
+                    <li>Jumlah buku yang dipinjamkan maksimal 2 (dua) buku.</li>
+                    <li>Waktu peminjaman koleksi selama 7 (tujuh) hari.</li>
+                </ol>
+        <p>&nbsp;</p>
+
+        
+        </div>
+        </div>
+
+
+
+
             <!--End Body-->
 
 

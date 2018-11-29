@@ -128,21 +128,22 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.php">Home</a></li>                    
                             <li><a href="koleksi.php">Koleksi</a></li>
-                            <li><a href="tentang.php">Tentang</a>
+                            <li class="dropdown">
+                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tentang
+                            </a>
                             <ul class="dropdown-menu">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-      <li class="divider"></li>
-      <li><a href="#">About Us</a></li>
-    </ul>
-    </li>
+                            <li><a href="#">Profil</a></li>
+                            <li><a href="#">Tujuan, Visi & Misi</a></li>
+                            <li><a href="#">Struktur Organisasi</a></li>
+                            <li><a href="#">Kontak</a></li>
+                        </ul>
+                     </li>
                             <li><a href="ketentuan.php">Ketentuan</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div> 
-
             </nav>
+            </div>
 
             <!--Body-->
 
