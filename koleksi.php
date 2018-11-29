@@ -157,7 +157,7 @@
           <!--  <p>
             
             </p> -->
-            <div class="clear"><a href="detailproduk.php?kd=<?php echo $data['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a> &raquo;</a></div>
+            <div class="clear"><a href="detailproduk.php?kd=<?php echo $data['idBuku'];?>" class="btn btn-lg btn-danger">Detail</a></a></div>
           
                     </div>
             </div>
