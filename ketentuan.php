@@ -160,14 +160,58 @@
                 <h2 class="bebas">Ketentuan Peminjaman</h2>
            </div>
         <hr/>
+                <h4>Cara untuk mendapatkan Kartu Anggota</h4>
+                <ol>
+                    <li>Mendaftarkan diri dengan menghubungi admin perpustakaan.</li>
+                    <li>Pengelola teknis perpustakaan unit memverifikasi calon anggota tersebut untuk memastikan pemustaka tersebut merupakan anggota perpustakaan unit</li>
+                    <li>Calon Anggota yang sudah diterima dapat mencetak kartu</li>
+                    <li>Anggota menunjukkan kartu anggota ke perpustakaan unit yang dikunjungi</li>
+                </ol>
                 <h4>Peminjaman</h4>
                 <ol>
                     <li>Jumlah buku yang dipinjamkan maksimal 2 (dua) buku.</li>
                     <li>Waktu peminjaman koleksi selama 7 (tujuh) hari.</li>
                 </ol>
-        <p>&nbsp;</p>
+                <h4>Pengembalian</h4>
+                <ol>Waktu pengembalian buku dihitung dengan cara menambah 7 (tujuh) hari dari tanggal peminjaman.
+Contoh : Tanggal peminjaman 1 Januari → dikembalikan tanggal 8 Januari
+</ol>
+                <h4>Perpanjangan Masa Peminjaman</h4>
+                <ol>
+                    <li>Perpanjangan dapat dilakukan paling lambat pada tanggal pengembalian yang tercantum pada lidah buku.</li>
+                    <li>Perpanjangan dapat dilakukan 1 (satu) kali, dihitung dengan cara menambah 7 (tujuh ) hari dari tanggal dilakukannya perpanjangan. Perpanjangan dapat dilakukan dengan cara peminjam buku datang langsung ke perpustakaan.</li>
+                </ol>
+                <h4>Sanksi dan Denda</h4>
+                <ol>
+                    <li>Anggota perpustakaan yang sering melakukan pelanggaran (3x berturut-turut) atau tidak mematuhi tata tertib yang berlaku, maka keanggotaannya ditarik kembali.</li>
+                    <li>Menghilangkan/merusak koleksi perpustakaan, diharuskan mengganti koleksi yang sama. Bila koleksi tersebut tidak bisa diperoleh di toko buku / penerbit, maka penggantian koleksi yang hilang / rusak ditetapkan oleh Kepala Perpustakaan. Jumlah denda diperhitungkan sampai buku tersebut diganti.</li> 
+                    <li>Keterlambatan pengembalian buku Rp 500 / hari / buku ( perhitungan denda dilakukan 1 hari setelah tanggal batas akhir pengembalian koleksi).</li>
+                    <li>Pembayaran denda dilakukan dengan membayar langsung di bagian Sirkulasi.</li>
+                </ol>
+                <h4>Sanksi Menghilangkan Buku</h4>
+                <ol>
+                Mengganti dengan buku yang sama.
+                </ol>
+                <h4>Tata Tertib Pengunjung</h4>
+                <ol>
+                    <li>Seluruh anggota Sahabat Graha Baca Online dapat menggunakan fasilitas perpustakaan dengan menunjukkan kartu Pegawai / kartu mahasiswa / Sahabat Graha Baca Online yang masih berlaku.</li>
+                    <li>Pengunjung perpustakaan wajib berpakaian sopan, tidak diperkenankan memakai sandal</li>
+                    <li>Pengunjung tidak diperkenankan membawa makanan, minuman ataupun merokok, baik di dalam ruangan perpustakaan maupun di luar area perpustakaan.</li>
+                    <li>Pengunjung perpustakaan harus menjaga ketenangan, kesopanan, ketertiban, kebersihan ruangan atau bahan pustaka yang dipergunakan. Dilarang membuat gaduh, dan mengganggu pengunjung lain. Handphone harap dimatikan (dalam kondisi silent).</li>
+                    <li>Petugas berhak untuk menegur atau meminta keluar pengguna yang berpakaian tidak sopan, melakukan tindakan yang tidak sopan atau tidak memenuhi yang berlaku.</li>
+                    <li>Perpustakaan akan menonaktifkan status keanggotaan jika masih ditemukan pelanggaran tata tertib</li>
+                </ol>
 
-        
+                <h4>Ketentuan Penggunaan Fasilitas Perpustakaan</h4>
+                <ol>
+                    <li>Semua anggota Perpustakan dapat memperoleh layanan Perpustakaan dan mempergunakan fasilitas layanan yang ada sesuai dengan ketentuan yang berlaku.</li>
+                    <li>Koleksi Perpustakaan yang berada di ruang perpustakaan dapat difotokopi sesuai dengan ketentuan yang berlaku (dapatkan kartu fotokopi) pada tiap layanan.</li>
+                    <li>Koleksi Perpustakaan yang telah dibaca tidak diperkenankan dikembalikan ke rak, tetapi diletakkan di meja-meja baca, atau kereta dorong yang tersedia.</li>
+                    <li>Peminjam bertanggung jawab atas buku yang dipinjamnya.</li>
+                    <li>Pengguna Perpustakaan tidak diperkenankan melakukan perusakan, perobekan ataupun tindakan vandalisme lainnya terhadap koleksi Perpustakaan.
+Informasi kegiatan-kegiatan perpustakaan dikomunikasikan melalui milis perpustakaan.</li>
+                </ol>
+                <p>&nbsp;</p>
         </div>
         </div>
 
