@@ -160,53 +160,21 @@
                 <h2 class="bebas">Struktur Organisasi Graha Baca Online</h2>
            </div>
         <hr/>
-                <h3> Kepala: Dra. Labibah, MLIS.
-Wakil Kepala                           : Dra. Khusnul Khotimah, SS., M.IP
-Kepala Bidang
-Kabid Layanan Pemustaka                   : Sri Astuti, SIP. M.IP
-Kabid Layanan Teknis                            : Dra. Ida Nur’aini Hadna, M.Pd.
-Kabid Layanan Teknologi Informasi    : Drs. Bambang Heru Nurwoto
-Kepala Urusan
-Kaur Umum dan Kepegawaian :  Agung Aridunta Herumurti, SH.
-Staf :
-Ismiyatin, S.Pd
-Asih Hidayati Yuli Astari, SE
-Minto Wasono
-Kaur Informasi : Isrowiyanti, S.Ag., SS.
-Staf :
-Puji Hartati, S.IP
-Basuki effendi. S.Sos
-Nur Arifin
-Kaur Pengembangan dan Pemeliharaan Koleksi : Siti Pamularsih, S.Sos., S.IPI
-Staf :
-Nur Akhmad
-Rohyati
-M. Syamsuddin
-Suhardi Widodo
-Kaur Sistem Informasi dan Jaringan : Edi Prasetya, S.Kom
-Staf :
-Fatchul Hijrih, S.Kom.
-Miftakhul Yazid Fuadi, SIP.
-Kaur Pengolahan Bahan Pustaka : Dra. Irhamny
-Staf :
-Drs. Moh. Tantowi, M.Si
-Muhammad Warsun, S.Pdi
-Kaur Repository Digital : Sugeng Harianto, SIP.
-Staf :
-Miftahul Ulum, S.Kom
-Zaenal Arifin, S.Sos.I., S.IPI.
-Kaur  Referensi dan Serial : Wahyani, S.Ag., M.IP
-Staf  :
-Hj. Dra. Retno Wuri W
-Etty Nurhayati
-Kaur Sirkulasi : Sri Lestari, M.IP
-Staf :
-Harniyati, S.H
-Suhardi, S.Sos
-Wiedyastuti Kartini, S.Sos
-Triono
-Ngadiman
-Badriyah
+                <h5>Kepala :Dra. Labibah, MLIS.</h5>
+                <h5>Wakil Kepala :Dra. Khusnul Khotimah, SS., M.IP</h5>
+                <h5>Kepala Bidang
+                    <li>Kabid Layanan Pemustaka : Sri Astuti, SIP. M.IP</li>
+                    <li>Kabid Layanan Teknis : Dra. Ida Nur’aini Hadna, M.Pd.</li>
+                    <li>Kabid Layanan Teknologi Informasi : Drs.Bambang Heru Nurwoto</li>
+                <h5>Kepala Urusan
+                    <li>Kaur Umum dan Kepegawaian : Agung Aridunta Herumurti, SH. </li>
+                    <li>Kaur Informasi : Isrowiyanti, S.Ag., SS.</li>
+                    <li>Kaur Pengembangan dan Pemeliharaan Koleksi : Siti Pamularsih, S.Sos., S.IPI</li>
+                    <li>Kaur Sistem Informasi dan Jaringan : Edi Prasetya, S.Kom</li>
+                    <li>Kaur Pengolahan Bahan Pustaka : Dra. Irhamny</li>
+                    <li>Kaur Repository Digital : Sugeng Harianto, SIP.</li>
+                    <li>Kaur  Referensi dan Serial : Wahyani, S.Ag., M.IP</li>
+                    <li>Kaur Sirkulasi : Sri Lestari, M.IP</li>
                 <p>&nbsp;</p>
         </div>
         </div>
