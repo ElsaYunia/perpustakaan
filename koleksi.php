@@ -95,6 +95,7 @@
                     </div>
                 </div>
 
+
                 <!-- Start Top Search -->
                 <div class="top-search">
                     <div class="container">
@@ -105,6 +106,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- End Top Search -->
 
 
@@ -140,11 +142,16 @@
                   </nav>
 
 
+
             <!--Body-->
-            <div class="home">
-            
-            <!-- start: Row -->
-            
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <hr>
+            <h2><center>KOLEKSI BUKU</center></h2>
             <div class="row">
                   <?php
                     $sql = mysql_query("SELECT * FROM tbl_buku ORDER BY idBuku DESC limit 5");
